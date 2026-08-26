@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)https://chat.deepseek.com/ -->
+<html lang="ru" class="notranslate" translate="no"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>DeepSeek - В неизвестность</title><meta name="viewport" content="initial-scale=1.0,maximum-scale=1,minimum-scale=1.0,user-scalable=no,width=device-width,viewport-fit=cover"><meta name="commit-id" content="c1d4fa5"><meta name="description" content="Chat with DeepSeek AI – your intelligent assistant for coding, content creation, file reading, and more. Upload documents, engage in long-context conversations, and get expert help in AI, natural language processing, and beyond. | 深度求索（DeepSeek）助力编程代码开发、创意写作、文件处理等任务，支持文件上传及长文本对话，随时为您提供高效的AI支持。"><meta name="keywords" content="DeepSeek,DeepSeek AI,DeepSeek Chat,AI assistant,coding assistant,long-context LLM,Open Source LLM,natural language processing,AI chatbot,AI long text,AI content creation,large language model,深度求索,大语言模型,自然语言处理,AI聊天机器人,代码开发,创意写作,AI助手,长文本对话,文件处理AI,大模型公司,人工智能,AI开发助手"><meta property="og:url" content="https://chat.deepseek.com"><meta property="og:type" content="website"><meta property="og:title" content="DeepSeek"><meta property="og:description" content="Chat with DeepSeek AI."><meta property="og:image" content="https://cdn.deepseek.com/images/deepseek-chat-open-graph-image.jpeg"><meta name="twitter:card" content="summary_large_image"><meta property="twitter:domain" content="deepseek.com"><meta property="twitter:url" content="https://chat.deepseek.com"><meta name="twitter:title" content="DeepSeek"><meta name="twitter:description" content="Chat with DeepSeek AI."><meta name="twitter:image" content="https://cdn.deepseek.com/images/deepseek-chat-open-graph-image.jpeg"><meta name="google" content="notranslate"><meta name="ip" content="212.109.199.152"><meta name="region" content="RU"><link rel="apple-touch-icon" sizes="180x180" href="https://fe-static.deepseek.com/chat/icon-180.png"><link rel="icon" type="image/x-icon" href="https://fe-static.deepseek.com/chat/favicon.svg"><link rel="manifest" href="https://fe-static.deepseek.com/chat/manifest.json"><script>"use strict";(()=>{let e;var t,n={disable_sdk_monitor:!0,enable_ab_test:!1,auto_exposure_expriment:!1,enable_stay_duration:!0,enable_debug:!1},a="volcengine_enabled",o=null,r=()=>{let e=Date.now();if(o&&e-o.timestampMs<=300)return o.state;let t=(()=>{var e,t,n;try{let o=localStorage.getItem("__ds_remote_feature_store");if(!o)return"unknown";let r=JSON.parse(o),s=(null==r?void 0:r.schemaVersion)===2?null==(t=null==(e=null==r?void 0:r.entries)?void 0:e[a])?void 0:t.value:null==(n=null==r?void 0:r.features)?void 0:n[a];return"true"===s?"enabled":"false"===s?"disabled":"unknown"}catch{return"unknown"}})();return o={state:t,timestampMs:e},t},s=e=>{},l=e=>{var t,n,a,o,r,s,l,i,c,d;t=window,n=document,a="apmPlus",o="precollect",r="addEventListener",(s=function(e){l=[].slice.call(arguments),l.push(Date.now(),location.href),(e==o?s.p.a:s.q).push(l)}).q=[],s.p={a:[]},t[a]=s,(i=document.createElement("script")).src="https://apm.volccdn.com/mars-web/apmplus/web/browser.cn.js?aid=0&globalName="+a,i.crossOrigin="anonymous",n.getElementsByTagName("head")[0].appendChild(i),r in t&&(s.pcErr=function(e){(c=(e=e||t.event).target||e.srcElement)instanceof Element||c instanceof HTMLElement?t[a](o,"st",{tagName:c.tagName,url:c.getAttribute("href")||c.getAttribute("src")}):t[a](o,"err",e.error||e.message)},s.pcRej=function(e){e=e||t.event,t[a](o,"reject",e.reason||e.detail&&e.detail.reason)},t[r]("error",s.pcErr,!0),t[r]("unhandledrejection",s.pcRej,!0)),"PerformanceLongTaskTiming"in t&&((d=s.pp={entries:[]}).observer=new PerformanceObserver(function(e){d.entries=d.entries.concat(e.getEntries())}),d.observer.observe({entryTypes:["longtask"]})),window.apmPlus("init",{aid:e.aid,token:e.token,env:e.env,release:e.release,domain:e.domain,plugins:{action:{enable:!0},performance:{longtask:!1},pageview:{routeMode:"manual"}}}),window.apmPlus("start")},i="__ds_report_settlers",c=e=>{let t=window;Array.isArray(t[i])||(t[i]=[]),t[i].push(e)},d=()=>{let e;(e=document.createElement("script")).defer=!0,e.src="https://lf3-data.volccdn.com/obj/data-static/log-sdk/collect/5.0/collect-rangers-v5.2.11.js",document.head.appendChild(e)},u=()=>{let e=document.querySelector('meta[name="commit-id"]');return e?e.content:""};(()=>{var e=window,t="collectEvent";if(e.LogAnalyticsObject=t,!e[t]){let n=(...e)=>{n.q.push(e)};n.q=[],e[t]=n}e[t].l=+new Date;let n=r();switch(n){case"enabled":d();return;case"disabled":return;case"unknown":c(e=>{e&&d()});return;default:s(n)}})(),t={timeoutMs:1e4,rootSelector:"#root",resourcePatterns:[/\/main(?:\.[\da-zA-Z-_]+)?\.js$/,/\/main(?:\.[\da-zA-Z-_]+)?\.css$/,/\/default-vendors(?:\.[\da-zA-Z-_]+)?\.js$/],dataFinderConfig:{appId:0x13145ad,channelDomain:"https://gator.volces.com",abChannelDomain:"https://tab.volces.com",enableStorage:!1,commitId:u()}},"enabled"===r()&&(e=Date.now(),window.setTimeout(()=>{var a,o,r,s;let l,i,c=window.collectEvent;"function"==typeof c&&((e=>{var t;if(!0===window.__dsDataFinderStarted)return;let a=window.collectEvent;"function"==typeof a&&(a("init",{...n,app_id:e.appId,channel_domain:e.channelDomain,ab_channel_domain:e.abChannelDomain,enable_storage:e.enableStorage}),a("config",{commit_id:e.commitId,ds_region:(null==(t=document.querySelector('meta[name="region"]'))?void 0:t.content)==="CN"?"cn":"overseas"}),a("start"),window.__dsDataFinderStarted=!0)})(t.dataFinderConfig),c("blankScreenCheck",{ds_timeoutMs:t.timeoutMs,ds_elapsedMs:Date.now()-e,ds_isBlank:(a=t.rootSelector,null===(l=document.querySelector(a))||0===l.children.length&&""===(l.textContent||"").trim()),ds_visibilityState:document.visibilityState,ds_resourceStatus:(o=t.resourcePatterns,i=null!=(s=null==(r=null==performance?void 0:performance.getEntriesByType)?void 0:r.call(performance,"resource"))?s:[],o.map(e=>{let t,n=i.find(t=>e.test(t.name));return void 0===n?"".concat(e.source,",missing"):"".concat((t=n.name).split("#")[0].split("?")[0].split("/").pop()||t,",").concat(n.responseEnd>0?"loaded":"failed")}).join(";"))}))},t.timeoutMs)),(e=>{let t=r();switch(t){case"enabled":l(e);return;case"disabled":return;case"unknown":c(t=>{t&&l(e)});return;default:s(t)}})({aid:675113,token:"772f2fcc08224a50b0134f8d3c139a21",env:"chat.deepseek.com"===location.hostname?"production":"other",release:u(),domain:"https://apmplus.volces.com"})})()</script><script defer="" src="./DeepSeek - В неизвестность_files/collect-rangers-v5.2.11.js"></script><script src="./DeepSeek - В неизвестность_files/browser.cn.js" crossorigin="anonymous"></script><style>._sri-logo{position:absolute;left:16px;top:21px;user-select:none;z-index:1}div._sri-ck{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;height:100vh;width:100%;position:absolute;top:0;left:0;background:#fff;color:#1d1d1f}@media (prefers-color-scheme: dark){div._sri-ck{background:#000;color:#f5f5f7}}._sri-ck .img{width:120px;height:auto;background-size:cover;margin-bottom:24px}._sri-ck ._sri-img-dark{display:none}@media (prefers-color-scheme: dark){._sri-ck ._sri-img-light{display:none}._sri-ck ._sri-img-dark{display:block}}._sri-ck .desc{font-size:15px;line-height:22px;margin:0 0 24px;color:#81858c}@media (prefers-color-scheme: dark){._sri-ck .desc{color:#adb2b8}}._sri-ck .btn{display:inline-flex;align-items:center;justify-content:center;height:36px;min-width:72px;padding:12px 14px;font-size:14px;font-weight:500;color:#fff;background:#3964fe;border:none;border-radius:9999px;cursor:pointer;font-family:inherit;box-sizing:border-box}@media (prefers-color-scheme: dark){._sri-ck .btn{background:#5686fe}}
+</style><script>(()=>{"use strict";let e=null,t={disable_sdk_monitor:!0,enable_ab_test:!1,auto_exposure_expriment:!1,enable_stay_duration:!0,enable_debug:!1},a=function(){return"function"!=typeof window.collectEvent?()=>0:window.collectEvent.apply(window,arguments)},o={en:{d:"Unable to load page resources. Please refresh and try again.",b:"Reload",logo:"DeepSeek"},zh:{d:"页面资源加载异常，请刷新重试",b:"重新加载",logo:"DeepSeek"}};window._sriCk=function(){var r;let n,i,s,d,c,l=(e=>{let t=navigator.languages||[navigator.language||""];for(let a=0;a<t.length;a++){let o=t[a].toLowerCase().split("-")[0];if(e.includes(o))return o}return null})(Object.keys(o)),g=l?o[l]:o.en,m='<img src="https://fe-static.deepseek.com/chat/static/web-logo.svg" alt="'+g.logo+'" class="_sri-logo" width=143 height=23>';m+='<div class="_sri-ck"><img class="img _sri-img-light" src="https://fe-static.deepseek.com/chat/static/web-error-logo-light.89842be665.png" alt=""><img class="img _sri-img-dark" src="https://fe-static.deepseek.com/chat/static/web-error-logo-dark.7c806d753d.png" alt=""><p class="desc">'+g.d+'</p><button class="btn" onclick="location.reload()">'+g.b+"</button></div>",(i=(n=document).createElement("div"),n.body.replaceChildren(i),i).innerHTML=m,(s=document.head.querySelector('meta[name="commit-id"]'))&&(e=s.getAttribute("content")),r=arguments,!0!==window.__dsDataFinderStarted&&(a("start"),a("init",{...t,app_id:0x13145ad,channel_domain:"https://gator.volces.com",enable_storage:!1}),window.__dsDataFinderStarted=!0),a("scriptLoadError",(c=(e=>{if(!e||!performance||!performance.getEntriesByName)return;let t=performance.getEntriesByName(e)[0];if(t)return t})(d=r[0]?r[0].src:"")||{},{ds_src:d,dsp__commitId:e,ds_duration:c.duration,ds_encodedBodySize:c.encodedBodySize}))}})()</script><script defer="" onerror="_sriCk(this)" src="./DeepSeek - В неизвестность_files/default-vendors.80d8928a1a.js"></script><script defer="" onerror="_sriCk(this)" src="./DeepSeek - В неизвестность_files/main.1298a0a5f3.js"></script><link href="./DeepSeek - В неизвестность_files/main.18db0dc7e3.css" rel="stylesheet"><style>
+body.change-theme * {
+  transition: none !important;
+}
+
+body.change-theme *::before {
+  transition: none !important;
+}
+
+body.change-theme *::after {
+  transition: none !important;
+}
+</style><link data-rspack="@deepseek/chat:chunk-52059" rel="stylesheet" href="./DeepSeek - В неизвестность_files/katex.effce08cb3.css"><script src="./DeepSeek - В неизвестность_files/appleid.auth.js"></script><script src="./DeepSeek - В неизвестность_files/fp-1.min.js" data-fp="true"></script><script src="./DeepSeek - В неизвестность_files/api.js" async="" defer=""></script><link data-rspack="@deepseek/chat:chunk-91851" rel="stylesheet" href="./DeepSeek - В неизвестность_files/previewAll.e0e78f8da4.css"></head><body class="ru light" style="--app-height: 712px;"><div id="root"><div class="cb86951c"><div class="cddfb2ed"></div><div class="c3ecdb44"><div class="dc04ec1d a02af2e6"><div class="ca6d4be1 _5a20a69"><div class="_6acebc2"><svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_4892_24313)"><path d="M26.5542 4.34393C26.2719 4.20592 26.1506 4.46928 25.9856 4.60268C25.9292 4.64581 25.8815 4.70216 25.8338 4.75391C25.4215 5.19438 24.9396 5.48361 24.3105 5.44911C23.3905 5.39736 22.605 5.68659 21.9104 6.39041C21.7626 5.52271 21.2721 5.00462 20.5258 4.67226C20.1353 4.49976 19.7403 4.32668 19.4666 3.95119C19.2757 3.68381 19.2234 3.38595 19.1279 3.09211C19.0669 2.91501 19.0066 2.73388 18.8024 2.7034C18.5811 2.6689 18.4942 2.85463 18.4074 3.00989C18.0601 3.6447 17.9255 4.34393 17.9388 5.05235C17.9692 6.64572 18.642 7.91478 19.9789 8.81756C20.1307 8.92106 20.1698 9.02457 20.1221 9.1758C20.0307 9.48688 19.9226 9.78876 19.8271 10.0998C19.7662 10.2982 19.6753 10.3419 19.4626 10.2551C18.7288 9.94862 18.0952 9.49493 17.5351 8.94694C16.5846 8.02749 15.7249 7.01258 14.6531 6.21791C14.4013 6.03218 14.1494 5.85967 13.8889 5.69522C12.7952 4.63316 14.0321 3.76086 14.3185 3.65736C14.618 3.54925 14.4225 3.17779 13.4548 3.18239C12.487 3.18642 11.6015 3.51073 10.4727 3.94256C10.3077 4.00754 10.1341 4.05469 9.95637 4.09379C8.93227 3.89944 7.86849 3.85631 6.75755 3.98167C4.66564 4.21455 2.99464 5.20358 1.7664 6.89183C0.290908 8.92106 -0.0564026 11.2269 0.368535 13.6316C0.815324 16.1663 2.10911 18.2645 4.09695 19.905C6.15838 21.6059 8.53263 22.4397 11.2415 22.2799C12.8867 22.185 14.7181 21.9648 16.7841 20.2161C17.3051 20.4755 17.8519 20.579 18.7587 20.6566C19.4574 20.7216 20.1302 20.6221 20.6511 20.514C21.4671 20.3415 21.4107 19.5859 21.1157 19.4473C18.7242 18.3335 19.2492 18.7866 18.772 18.4198C19.987 16.9822 21.8431 14.4269 22.4158 10.9474C22.4722 10.5633 22.5441 10.0222 22.5355 9.71114C22.5309 9.52138 22.5746 9.44778 22.7913 9.42593C23.3905 9.35693 23.9718 9.19305 24.506 8.89921C26.0557 8.05279 26.6808 6.6624 26.828 4.996C26.8498 4.74126 26.8234 4.47791 26.5542 4.34393ZM13.0511 19.3438C10.7332 17.5216 9.60906 16.9219 9.14502 16.9477C8.71089 16.9736 8.78909 17.4704 8.88454 17.7942C8.98459 18.1139 9.11455 18.3341 9.29683 18.6147C9.42276 18.8004 9.50959 19.0764 9.1709 19.284C8.42453 19.7458 7.12671 19.1288 7.06576 19.0983C5.55519 18.2087 4.29245 17.0346 3.40233 15.4285C2.54268 13.8829 2.04356 12.2245 1.96133 10.4546C1.93948 10.0274 2.06541 9.87617 2.49092 9.79854C3.05099 9.69504 3.62831 9.67319 4.1878 9.75541C6.55342 10.101 8.56713 11.1585 10.2554 12.8341C11.2191 13.788 11.9482 14.9283 12.6992 16.0421C13.4979 17.2249 14.357 18.3519 15.4512 19.276C15.8377 19.5997 16.1459 19.8458 16.4408 20.0275C15.5513 20.127 14.0666 20.1483 13.0511 19.345V19.3438ZM14.162 12.1981C14.162 12.0083 14.3139 11.8571 14.5048 11.8571C14.5479 11.8571 14.587 11.8657 14.6221 11.8784C14.6698 11.8956 14.7135 11.9215 14.748 11.9606C14.8089 12.021 14.8434 12.1072 14.8434 12.1981C14.8434 12.3878 14.6916 12.5391 14.5007 12.5391C14.3098 12.5391 14.162 12.3878 14.162 12.1981ZM17.6127 13.968C17.3913 14.0588 17.17 14.1365 16.9572 14.1451C16.6271 14.1623 16.2672 14.0284 16.0717 13.8645C15.7681 13.6098 15.5507 13.4671 15.4599 13.0227C15.4208 12.8329 15.4426 12.5391 15.4771 12.3706C15.5553 12.0078 15.4685 11.7749 15.2126 11.5633C15.0045 11.3908 14.7394 11.343 14.4484 11.343C14.3397 11.343 14.2403 11.2953 14.1661 11.2568C14.0447 11.1964 13.9447 11.0452 14.0401 10.8594C14.0706 10.7991 14.2184 10.6524 14.2529 10.6266C14.6479 10.4017 15.1034 10.4753 15.5248 10.6438C15.9153 10.8037 16.2108 11.0969 16.6358 11.5115C17.0699 12.0124 17.1481 12.1504 17.3954 12.5264C17.5909 12.8203 17.7686 13.1221 17.8905 13.4677C17.9641 13.6834 17.8686 13.8599 17.6127 13.968Z" fill="var(--dsw-alias-brand-primary)"></path></g><defs><clippath id="clip0_4892_24313"><rect width="26.634" height="19.6" fill="white" transform="translate(0.199951 2.69922)"></rect></clippath></defs></svg></div><div class="e5bf614e"><div style="width: 1px;"></div><div role="button" class="ds-button ds-button--iconLabelPrimary ds-button--icon ds-button--capsule ds-button--m ds-button--icon-relative-m _4f3769f" tabindex="0" style="--dsl-button-height: 34px;"><div class="ds-button__background"></div><div class="ds-button__icon ds-button__icon--last-child"><div class="ds-icon" style="font-size: inherit;"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.67272 0.522841C10.8339 0.522841 11.76 0.522714 12.4963 0.602493C13.2453 0.683657 13.8789 0.854248 14.4264 1.25197C14.7504 1.48739 15.0355 1.77247 15.2709 2.0965C15.6686 2.64394 15.8392 3.27758 15.9204 4.02655C16.0002 4.7629 16 5.68895 16 6.85014V9.14986C16 10.3111 16.0002 11.2371 15.9204 11.9735C15.8392 12.7224 15.6686 13.3561 15.2709 13.9035C15.0355 14.2275 14.7504 14.5126 14.4264 14.748C13.8789 15.1458 13.2453 15.3163 12.4963 15.3975C11.76 15.4773 10.8339 15.4772 9.67272 15.4772H6.3273C5.16611 15.4772 4.24006 15.4773 3.50371 15.3975C2.75474 15.3163 2.1211 15.1458 1.57366 14.748C1.24963 14.5126 0.964549 14.2275 0.729131 13.9035C0.331407 13.3561 0.160817 12.7224 0.0796529 11.9735C-0.000126137 11.2371 1.25338e-09 10.3111 1.25338e-09 9.14986V6.85014C1.25329e-09 5.68895 -0.000126137 4.7629 0.0796529 4.02655C0.160817 3.27758 0.331407 2.64394 0.729131 2.0965C0.964549 1.77247 1.24963 1.48739 1.57366 1.25197C2.1211 0.854248 2.75474 0.683657 3.50371 0.602493C4.24006 0.522714 5.16611 0.522841 6.3273 0.522841H9.67272ZM5.54303 1.88715V14.1118C5.78636 14.1128 6.04709 14.1169 6.3273 14.1169H9.67272C10.8639 14.1169 11.7032 14.1164 12.3493 14.0465C12.9824 13.9779 13.3497 13.8494 13.6268 13.6482C13.8354 13.4966 14.0195 13.3125 14.1711 13.1039C14.3723 12.8268 14.5007 12.4595 14.5693 11.8264C14.6393 11.1803 14.6398 10.341 14.6398 9.14986V6.85014C14.6398 5.65896 14.6393 4.81967 14.5693 4.1736C14.5007 3.54048 14.3723 3.17318 14.1711 2.89609C14.0195 2.68747 13.8354 2.50337 13.6268 2.35179C13.3497 2.1506 12.9824 2.02212 12.3493 1.95353C11.7032 1.88358 10.8639 1.88307 9.67272 1.88307H6.3273C6.04709 1.88307 5.78636 1.8862 5.54303 1.88715ZM4.1828 1.91166C3.99125 1.9216 3.8148 1.93577 3.65076 1.95353C3.01764 2.02212 2.65034 2.1506 2.37325 2.35179C2.16463 2.50337 1.98052 2.68747 1.82895 2.89609C1.62776 3.17318 1.49928 3.54048 1.43069 4.1736C1.36074 4.81967 1.36023 5.65896 1.36023 6.85014V9.14986C1.36023 10.341 1.36074 11.1803 1.43069 11.8264C1.49928 12.4595 1.62776 12.8268 1.82895 13.1039C1.98052 13.3125 2.16463 13.4966 2.37325 13.6482C2.65034 13.8494 3.01764 13.9779 3.65076 14.0465C3.81478 14.0642 3.99127 14.0774 4.1828 14.0873V1.91166Z" fill="currentColor"></path></svg></div></div></div><div role="button" class="ds-button ds-button--iconLabelPrimary ds-button--icon ds-button--capsule ds-button--m ds-button--icon-relative-m _4f3769f" tabindex="0" style="--dsl-button-height: 34px;"><div class="ds-button__background"></div><div class="ds-button__icon ds-button__icon--last-child"><div class="ds-icon" style="font-size: inherit;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 0.599609C3.91309 0.599609 0.599609 3.91309 0.599609 8C0.599609 9.13376 0.855461 10.2098 1.3125 11.1719L1.5918 11.7588L2.76562 11.2012L2.48633 10.6143C2.11034 9.82278 1.90039 8.93675 1.90039 8C1.90039 4.63106 4.63106 1.90039 8 1.90039C11.3689 1.90039 14.0996 4.63106 14.0996 8C14.0996 11.3689 11.3689 14.0996 8 14.0996C7.31041 14.0996 6.80528 14.0514 6.35742 13.9277C5.91623 13.8059 5.49768 13.6021 4.99707 13.2529C4.26492 12.7422 3.21611 12.5616 2.35156 13.1074L2.33789 13.1162L2.32422 13.126L1.58789 13.6436L2.01953 14.9297L3.0459 14.207C3.36351 14.0065 3.83838 14.0294 4.25293 14.3184C4.84547 14.7317 5.39743 15.011 6.01172 15.1807C6.61947 15.3485 7.25549 15.4004 8 15.4004C12.0869 15.4004 15.4004 12.0869 15.4004 8C15.4004 3.91309 12.0869 0.599609 8 0.599609ZM7.34473 4.93945V7.34961H4.93945V8.65039H7.34473V11.0605H8.64551V8.65039H11.0605V7.34961H8.64551V4.93945H7.34473Z" fill="currentColor"></path></svg></div></div></div></div></div><div class="b8812f16 a2f3d50e _70b689f" style="display: none;"><div class="_262baab"><div class="e066abb8"><svg width="143" height="23" viewBox="0 0 143 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M78.6785 18.6823H77.1078V16.2472H78.6785C79.6513 16.2472 80.6342 16.0047 81.2672 15.3308C81.9009 14.6569 82.14 13.6232 82.14 12.59C82.14 11.5569 81.9109 10.5231 81.2672 9.84981C80.6247 9.17594 79.6513 8.93343 78.6785 8.93343C77.7056 8.93343 76.7228 9.17594 76.0886 9.84981C75.4549 10.5237 75.2158 11.5569 75.2158 12.59V22.5909H72.4605V6.50781H75.2158V7.53204H75.7209C75.7757 7.4689 75.8304 7.41525 75.8857 7.36161C76.5752 6.73244 77.6308 6.50781 78.6684 6.50781C80.2944 6.50781 81.9193 6.91236 82.9849 8.03549C84.0499 9.15861 84.4265 10.8835 84.4265 12.6001C84.4265 14.3166 84.0404 16.0326 82.9849 17.1647C81.9288 18.2967 80.2944 18.6834 78.6785 18.6834V18.6823Z" fill="var(--dsw-alias-brand-primary)"></path><path d="M36.7486 6.94097H38.3188V9.37609H36.7486C35.7753 9.37609 34.7929 9.61859 34.1593 10.2925C33.5257 10.9663 33.2871 12.0001 33.2871 13.0332C33.2871 14.0664 33.5167 15.0996 34.1593 15.7734C34.8019 16.4473 35.7753 16.6898 36.7486 16.6898C37.722 16.6898 38.7049 16.4473 39.3385 15.7734C39.9722 15.0996 40.2108 14.0664 40.2108 13.0332V3.02344H42.9655V19.116H40.2108V18.0918H39.7057C39.6503 18.1544 39.5956 18.2086 39.5403 18.2622C38.8513 18.8908 37.7952 19.116 36.7576 19.116C35.1321 19.116 33.5067 18.712 32.4416 17.5889C31.3766 16.4658 31 14.7403 31 13.0243C31 11.3083 31.3856 9.59177 32.4416 8.45971C33.5067 7.33658 35.1321 6.94097 36.7486 6.94097Z" fill="var(--dsw-alias-brand-primary)"></path><path d="M56.7855 12.8155V13.795H49.4483V11.8454H54.3152C54.2051 11.1358 53.9481 10.4709 53.4887 9.9853C52.8277 9.2846 51.808 9.03316 50.7983 9.03316C49.7886 9.03316 48.7688 9.2846 48.1078 9.9853C47.4468 10.686 47.2076 11.7555 47.2076 12.816C47.2076 13.8766 47.4462 14.9544 48.1078 15.6462C48.7688 16.338 49.788 16.5989 50.7983 16.5989C51.8085 16.5989 52.8277 16.3475 53.4887 15.6462C53.5804 15.5473 53.6631 15.4395 53.7458 15.3316H56.4642C56.2256 16.1765 55.849 16.9403 55.2796 17.5332C54.1777 18.692 52.479 19.1145 50.7983 19.1145C49.1175 19.1145 47.4188 18.701 46.3169 17.5332C45.215 16.3653 44.8111 14.5862 44.8111 12.816C44.8111 11.0458 45.2061 9.25778 46.3169 8.0989C47.4283 6.94001 49.1175 6.51758 50.7983 6.51758C52.479 6.51758 54.1777 6.93107 55.2796 8.0989C56.3904 9.26672 56.7855 11.0458 56.7855 12.816V12.8155Z" fill="var(--dsw-alias-brand-primary)"></path><path d="M70.6151 12.8155V13.795H63.2779V11.8454H68.1448C68.0341 11.1358 67.7776 10.4709 67.3183 9.9853C66.6573 9.2846 65.6376 9.03316 64.6279 9.03316C63.6182 9.03316 62.5984 9.2846 61.9374 9.9853C61.2764 10.686 61.0372 11.7555 61.0372 12.816C61.0372 13.8766 61.2758 14.9544 61.9374 15.6462C62.5984 16.338 63.6182 16.5989 64.6279 16.5989C65.6376 16.5989 66.6573 16.3475 67.3183 15.6462C67.4105 15.5473 67.4927 15.4395 67.5748 15.3316H70.2938C70.0546 16.1765 69.678 16.9403 69.1086 17.5332C68.0067 18.692 66.3081 19.1145 64.6279 19.1145C62.9476 19.1145 61.2484 18.701 60.1465 17.5332C59.0446 16.3653 58.6406 14.5862 58.6406 12.816C58.6406 11.0458 59.0357 9.25778 60.1465 8.0989C61.2579 6.94001 62.9471 6.51758 64.6279 6.51758C66.3086 6.51758 68.0067 6.93107 69.1086 8.0989C70.22 9.26672 70.6151 11.0458 70.6151 12.816V12.8155Z" fill="var(--dsw-alias-brand-primary)"></path><path d="M92.2781 19.1156C93.9589 19.1156 95.657 18.8731 96.7589 18.1813C97.8608 17.4896 98.2653 16.438 98.2653 15.3959C98.2653 14.3538 97.8697 13.2932 96.7589 12.6104C95.657 11.9276 93.9583 11.6756 92.2781 11.6756C91.5612 11.6756 90.9002 11.5767 90.4319 11.3163C89.9637 11.0464 89.7893 10.6424 89.7893 10.2379C89.7893 9.83332 89.9547 9.42039 90.4319 9.15944C90.9002 8.88955 91.626 8.80015 92.3418 8.80015C93.0576 8.80015 93.7834 8.89905 94.2528 9.15944C94.721 9.42933 94.8954 9.83332 94.8954 10.2379H97.6959C97.6959 9.1952 97.3383 8.13522 96.3376 7.4524C95.3368 6.76958 93.803 6.51758 92.2787 6.51758C90.7543 6.51758 89.2211 6.76008 88.2198 7.4524C87.219 8.14416 86.8603 9.1952 86.8603 10.2379C86.8603 11.2805 87.2185 12.3405 88.2198 13.0233C89.2205 13.7061 90.7538 13.9582 92.2787 13.9582C93.0682 13.9582 93.941 14.0571 94.464 14.3174C94.9881 14.5784 95.1714 14.9913 95.1714 15.3959C95.1714 15.8004 94.9881 16.2133 94.464 16.4743C93.941 16.7347 93.142 16.8336 92.3524 16.8336C91.5629 16.8336 90.7543 16.7347 90.2397 16.4743C89.7256 16.2139 89.5323 15.8004 89.5323 15.3959H86.2998C86.2998 16.4385 86.6943 17.4985 87.8063 18.1813C88.9171 18.8641 90.5979 19.1156 92.2787 19.1156H92.2781Z" fill="var(--dsw-alias-brand-primary)"></path><path d="M112.094 12.8155V13.795H104.757V11.8454H109.624C109.514 11.1358 109.257 10.4709 108.798 9.9853C108.136 9.2846 107.117 9.03316 106.106 9.03316C105.095 9.03316 104.077 9.2846 103.416 9.9853C102.755 10.686 102.517 11.7555 102.517 12.816C102.517 13.8766 102.755 14.9544 103.416 15.6462C104.077 16.338 105.097 16.5989 106.106 16.5989C107.116 16.5989 108.136 16.3475 108.798 15.6462C108.889 15.5473 108.972 15.4395 109.054 15.3316H111.772C111.533 16.1765 111.157 16.9403 110.588 17.5332C109.486 18.692 107.787 19.1145 106.106 19.1145C104.425 19.1145 102.727 18.701 101.625 17.5332C100.524 16.3653 100.12 14.5862 100.12 12.816C100.12 11.0458 100.515 9.25778 101.625 8.0989C102.737 6.94001 104.427 6.51758 106.106 6.51758C107.786 6.51758 109.486 6.93107 110.588 8.0989C111.699 9.26672 112.093 11.0458 112.093 12.816L112.094 12.8155Z" fill="var(--dsw-alias-brand-primary)"></path><path d="M125.924 12.8155V13.795H118.586V11.8454H123.453C123.344 11.1358 123.086 10.4709 122.627 9.9853C121.966 9.2846 120.947 9.03316 119.936 9.03316C118.926 9.03316 117.907 9.2846 117.246 9.9853C116.585 10.686 116.346 11.7555 116.346 12.816C116.346 13.8766 116.585 14.9544 117.246 15.6462C117.907 16.338 118.927 16.5989 119.936 16.5989C120.946 16.5989 121.966 16.3475 122.627 15.6462C122.719 15.5473 122.801 15.4395 122.885 15.3316H125.602C125.363 16.1765 124.987 16.9403 124.418 17.5332C123.316 18.692 121.617 19.1145 119.936 19.1145C118.256 19.1145 116.558 18.701 115.456 17.5332C114.354 16.3653 113.949 14.5862 113.949 12.816C113.949 11.0458 114.344 9.25778 115.456 8.0989C116.567 6.94001 118.256 6.51758 119.936 6.51758C121.617 6.51758 123.315 6.93107 124.418 8.0989C125.529 9.26672 125.924 11.0458 125.924 12.816V12.8155Z" fill="var(--dsw-alias-brand-primary)"></path><path d="M130.524 3.02344H127.77V19.116H130.524V3.02344Z" fill="var(--dsw-alias-brand-primary)"></path><path d="M135.227 12.4384L139.744 19.1146H136.337L131.819 12.4384L136.337 7.07422H139.744L135.227 12.4384Z" fill="var(--dsw-alias-brand-primary)"></path><g clip-path="url(#clip0_4329_19769)"><path d="M26.5174 3.39471C26.235 3.2567 26.1137 3.52006 25.9487 3.65346C25.8923 3.69659 25.8446 3.75294 25.7969 3.80469C25.3846 4.24516 24.9027 4.53439 24.2737 4.49989C23.3536 4.44814 22.5682 4.73737 21.8735 5.44119C21.7258 4.57349 21.2353 4.0554 20.4889 3.72304C20.0985 3.55054 19.7034 3.37746 19.4297 3.00197C19.2388 2.73459 19.1865 2.43673 19.091 2.14289C19.0301 1.96579 18.9697 1.78466 18.7656 1.75418C18.5442 1.71968 18.4574 1.90541 18.3705 2.06067C18.0232 2.69549 17.8887 3.39471 17.9019 4.10313C17.9324 5.6965 18.6051 6.96556 19.9421 7.86834C20.0939 7.97184 20.133 8.07535 20.0852 8.22658C19.9938 8.53766 19.8857 8.83955 19.7903 9.15063C19.7293 9.34901 19.6385 9.39271 19.4257 9.30588C18.692 8.9994 18.0583 8.54571 17.4982 7.99772C16.5477 7.07827 15.6881 6.06336 14.6162 5.26869C14.3644 5.08296 14.1125 4.91045 13.8521 4.746C12.7584 3.68394 13.9952 2.81164 14.2816 2.70814C14.5812 2.60003 14.3857 2.22857 13.4179 2.23317C12.4502 2.2372 11.5646 2.56151 10.4359 2.99335C10.2708 3.05832 10.0972 3.10547 9.91951 3.14457C8.8954 2.95022 7.83162 2.90709 6.72069 3.03245C4.62877 3.26533 2.95777 4.25436 1.72954 5.94261C0.254043 7.97184 -0.0932679 10.2777 0.33167 12.6824C0.778458 15.2171 2.07225 17.3153 4.06008 18.9558C6.12152 20.6567 8.49577 21.4905 11.2047 21.3306C12.8498 21.2358 14.6812 21.0155 16.7473 19.2669C17.2682 19.5262 17.8151 19.6297 18.7219 19.7074C19.4205 19.7724 20.0933 19.6729 20.6143 19.5648C21.4302 19.3923 21.3739 18.6367 21.0789 18.4981C18.6874 17.3843 19.2124 17.8374 18.7351 17.4706C19.9501 16.033 21.8063 13.4776 22.379 9.99821C22.4353 9.61409 22.5072 9.073 22.4986 8.76192C22.494 8.57216 22.5377 8.49856 22.7545 8.47671C23.3536 8.40771 23.935 8.24383 24.4692 7.94999C26.0188 7.10357 26.6439 5.71318 26.7911 4.04678C26.8129 3.79204 26.7865 3.52869 26.5174 3.39471ZM13.0143 18.3946C10.6964 16.5724 9.5722 15.9726 9.10816 15.9985C8.67402 16.0244 8.75222 16.5212 8.84768 16.8449C8.94773 17.1646 9.07768 17.3849 9.25996 17.6655C9.38589 17.8512 9.47272 18.1272 9.13404 18.3348C8.38766 18.7965 7.08985 18.1796 7.0289 18.1491C5.51833 17.2595 4.25559 16.0853 3.36546 14.4793C2.50581 12.9337 2.0067 11.2753 1.92447 9.50542C1.90262 9.07818 2.02855 8.92695 2.45406 8.84932C3.01413 8.74582 3.59144 8.72397 4.15093 8.80619C6.51656 9.15178 8.53027 10.2092 10.2185 11.8848C11.1822 12.8388 11.9114 13.979 12.6623 15.0929C13.461 16.2757 14.3201 17.4027 15.4144 18.3268C15.8008 18.6505 16.109 18.8966 16.404 19.0783C15.5144 19.1778 14.0297 19.1991 13.0143 18.3958V18.3946ZM14.1252 11.2489C14.1252 11.0591 14.277 10.9079 14.4679 10.9079C14.511 10.9079 14.5501 10.9165 14.5852 10.9292C14.6329 10.9464 14.6766 10.9723 14.7111 11.0114C14.7721 11.0718 14.8066 11.158 14.8066 11.2489C14.8066 11.4386 14.6548 11.5899 14.4639 11.5899C14.273 11.5899 14.1252 11.4386 14.1252 11.2489ZM17.5759 13.0188C17.3545 13.1096 17.1331 13.1873 16.9203 13.1959C16.5903 13.2131 16.2303 13.0791 16.0348 12.9153C15.7312 12.6605 15.5139 12.5179 15.423 12.0734C15.3839 11.8837 15.4057 11.5899 15.4402 11.4214C15.5185 11.0585 15.4316 10.8257 15.1757 10.614C14.9676 10.4415 14.7025 10.3938 14.4115 10.3938C14.3029 10.3938 14.2034 10.3461 14.1292 10.3076C14.0079 10.2472 13.9078 10.096 14.0033 9.91023C14.0338 9.84985 14.1815 9.70322 14.216 9.67734C14.6111 9.45251 15.0665 9.52612 15.488 9.6946C15.8784 9.85445 16.174 10.1477 16.5989 10.5623C17.033 11.0631 17.1112 11.2011 17.3585 11.5772C17.554 11.871 17.7317 12.1729 17.8536 12.5185C17.9272 12.7341 17.8317 12.9107 17.5759 13.0188Z" fill="var(--dsw-alias-brand-primary)"></path></g><defs><clippath id="clip0_4329_19769"><rect width="26.634" height="19.6" fill="white" transform="translate(0.163086 1.75)"></rect></clippath></defs></svg></div><div class="_23e1c55"><div role="button" class="ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--m ds-button--icon-relative-m ds-button--sizing-content d05a0287" tabindex="0" style="--dsl-button-height: 34px;"><div class="ds-button__background"></div><div class="ds-button__icon ds-button__icon--last-child"><div class="ds-icon" style="font-size: inherit;"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.894845 6.647401C11.894845 3.725463 9.534486 1.356779 6.623219 1.35657C3.711786 1.35657 1.351635 3.725338 1.351635 6.647401C1.351843 9.569296 3.711911 11.938273 6.623219 11.938273C9.534361 11.938064 11.894637 9.569171 11.894845 6.647401ZM13.245462 6.647401C13.245254 10.317935 10.280401 13.293613 6.623219 13.293821C2.965871 13.293821 0.000204 10.31806 0 6.647401C0 2.976574 2.965746 0 6.623219 0C10.280526 0.000205 13.245462 2.9767 13.245462 6.647401Z" fill="currentColor"></path><path d="M16.000417 15.041079L15.044449 16.000433L11.530434 12.473588L12.486298 11.514234L16.000417 15.041079Z" fill="currentColor"></path></svg></div></div></div><div role="button" class="ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--m ds-button--icon-relative-m ds-button--sizing-content _7d1f5e2" tabindex="0" style="--dsl-button-height: 34px;"><div class="ds-button__background"></div><div class="ds-button__icon ds-button__icon--last-child"><div class="ds-icon" style="font-size: inherit;"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.67272 0.522841C10.8339 0.522841 11.76 0.522714 12.4963 0.602493C13.2453 0.683657 13.8789 0.854248 14.4264 1.25197C14.7504 1.48739 15.0355 1.77247 15.2709 2.0965C15.6686 2.64394 15.8392 3.27758 15.9204 4.02655C16.0002 4.7629 16 5.68895 16 6.85014V9.14986C16 10.3111 16.0002 11.2371 15.9204 11.9735C15.8392 12.7224 15.6686 13.3561 15.2709 13.9035C15.0355 14.2275 14.7504 14.5126 14.4264 14.748C13.8789 15.1458 13.2453 15.3163 12.4963 15.3975C11.76 15.4773 10.8339 15.4772 9.67272 15.4772H6.3273C5.16611 15.4772 4.24006 15.4773 3.50371 15.3975C2.75474 15.3163 2.1211 15.1458 1.57366 14.748C1.24963 14.5126 0.964549 14.2275 0.729131 13.9035C0.331407 13.3561 0.160817 12.7224 0.0796529 11.9735C-0.000126137 11.2371 1.25338e-09 10.3111 1.25338e-09 9.14986V6.85014C1.25329e-09 5.68895 -0.000126137 4.7629 0.0796529 4.02655C0.160817 3.27758 0.331407 2.64394 0.729131 2.0965C0.964549 1.77247 1.24963 1.48739 1.57366 1.25197C2.1211 0.854248 2.75474 0.683657 3.50371 0.602493C4.24006 0.522714 5.16611 0.522841 6.3273 0.522841H9.67272ZM5.54303 1.88715V14.1118C5.78636 14.1128 6.04709 14.1169 6.3273 14.1169H9.67272C10.8639 14.1169 11.7032 14.1164 12.3493 14.0465C12.9824 13.9779 13.3497 13.8494 13.6268 13.6482C13.8354 13.4966 14.0195 13.3125 14.1711 13.1039C14.3723 12.8268 14.5007 12.4595 14.5693 11.8264C14.6393 11.1803 14.6398 10.341 14.6398 9.14986V6.85014C14.6398 5.65896 14.6393 4.81967 14.5693 4.1736C14.5007 3.54048 14.3723 3.17318 14.1711 2.89609C14.0195 2.68747 13.8354 2.50337 13.6268 2.35179C13.3497 2.1506 12.9824 2.02212 12.3493 1.95353C11.7032 1.88358 10.8639 1.88307 9.67272 1.88307H6.3273C6.04709 1.88307 5.78636 1.8862 5.54303 1.88715ZM4.1828 1.91166C3.99125 1.9216 3.8148 1.93577 3.65076 1.95353C3.01764 2.02212 2.65034 2.1506 2.37325 2.35179C2.16463 2.50337 1.98052 2.68747 1.82895 2.89609C1.62776 3.17318 1.49928 3.54048 1.43069 4.1736C1.36074 4.81967 1.36023 5.65896 1.36023 6.85014V9.14986C1.36023 10.341 1.36074 11.1803 1.43069 11.8264C1.49928 12.4595 1.62776 12.8268 1.82895 13.1039C1.98052 13.3125 2.16463 13.4966 2.37325 13.6482C2.65034 13.8494 3.01764 13.9779 3.65076 14.0465C3.81478 14.0642 3.99127 14.0774 4.1828 14.0873V1.91166Z" fill="currentColor"></path></svg></div></div></div></div></div><div class="_7b40dad"><div class="dc1f7bee _4bcc731"><div class="_5a8ac7a a084f19e" tabindex="0" style="justify-content: center;"><div class="ds-icon _1c42ad7" style="font-size: 16px; width: 16px; height: 16px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 0.599609C3.91309 0.599609 0.599609 3.91309 0.599609 8C0.599609 9.13376 0.855461 10.2098 1.3125 11.1719L1.5918 11.7588L2.76562 11.2012L2.48633 10.6143C2.11034 9.82278 1.90039 8.93675 1.90039 8C1.90039 4.63106 4.63106 1.90039 8 1.90039C11.3689 1.90039 14.0996 4.63106 14.0996 8C14.0996 11.3689 11.3689 14.0996 8 14.0996C7.31041 14.0996 6.80528 14.0514 6.35742 13.9277C5.91623 13.8059 5.49768 13.6021 4.99707 13.2529C4.26492 12.7422 3.21611 12.5616 2.35156 13.1074L2.33789 13.1162L2.32422 13.126L1.58789 13.6436L2.01953 14.9297L3.0459 14.207C3.36351 14.0065 3.83838 14.0294 4.25293 14.3184C4.84547 14.7317 5.39743 15.011 6.01172 15.1807C6.61947 15.3485 7.25549 15.4004 8 15.4004C12.0869 15.4004 15.4004 12.0869 15.4004 8C15.4004 3.91309 12.0869 0.599609 8 0.599609ZM7.34473 4.93945V7.34961H4.93945V8.65039H7.34473V11.0605H8.64551V8.65039H11.0605V7.34961H8.64551V4.93945H7.34473Z" fill="currentColor"></path></svg></div><span>Новый чат</span><div class="ds-focus-ring"></div></div></div></div><div class="_3586175 ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled"><div class="ds-scroll-area__gutters" style="--container-height: 0px; position: sticky; top: 0px; left: 0px; right: 0px; width: 100%; height: 0px;"><div class="ds-scroll-area__horizontal-gutter" style="left: 3px; right: 3px; display: block; top: calc(var(--container-height) - 11px); height: 8px;"><div class="ds-scroll-area__horizontal-bar" style="display: none;"></div></div><div class="ds-scroll-area__vertical-gutter" style="right: -10px; top: 3px; bottom: calc(0px - var(--container-height) + 3px); width: 8px;"><div class="ds-scroll-area__vertical-bar" style="display: none;"></div></div></div><div class="_6d215eb _9c6768c ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled" style="--container-height: 0px;"><div class="fd90d2b2"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.8112 15.8271C13.5355 16.8432 11.9197 17.4502 10.1599 17.4502V19.0498C12.2946 19.0498 14.2593 18.312 15.8083 17.0781L14.8112 15.8271ZM15.9938 5.35352C17.0138 6.62776 17.6237 8.24181 17.6237 10C17.6237 11.7582 17.0138 13.3722 15.9938 14.6465L17.2438 15.6465C18.4825 14.099 19.2233 12.1348 19.2233 10C19.2233 7.86525 18.4825 5.90103 17.2438 4.35352L15.9938 5.35352ZM1.95966 6.33594C0.911965 8.63275 0.776518 11.3729 1.96943 13.8799L3.41376 13.1924C2.44396 11.1543 2.54396 8.91111 3.41571 7L1.95966 6.33594ZM10.1599 0.950195C7.35567 0.950203 4.95206 2.24332 3.33564 4.16113L4.55927 5.19238C5.90071 3.60083 7.87064 2.54981 10.1599 2.5498C11.9197 2.54982 13.5355 3.15676 14.8112 4.17285L15.8083 2.92188C14.2593 1.68801 12.2946 0.950206 10.1599 0.950195Z" fill="currentColor"></path><path d="M6.33857 16.2573C5.45613 15.642 4.18994 15.4232 3.14521 16.0825L3.12763 16.0933L2.12958 16.7964L2.63251 18.2935L2.68134 18.3648L4.00654 17.4312C4.37837 17.2015 4.93509 17.2284 5.42353 17.5689C5.84119 17.8602 6.24515 18.0987 6.65986 18.2867L7.38837 18.6168L8.04951 17.1597L7.32099 16.8296C7.01369 16.6903 6.69421 16.5054 6.33857 16.2573Z" fill="currentColor"></path></svg><span>Нет истории чатов</span></div><div class="_77cdc67 _8a693f3"></div></div></div><div class="_7b40dad f14f3a6d"><div class="dc1f7bee _4bcc731"><div class="_2afd28d" tabindex="0"><div class="ede5bc47">M</div><div class="_9d8da05">maks********l56@gmail.com</div><div class="ds-icon _39cc453" style="font-size: 16px; width: 16px; height: 16px;"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.55146 8.00001C4.55146 8.63513 4.03659 9.15001 3.40146 9.15001C2.76634 9.15001 2.25146 8.63513 2.25146 8.00001C2.25146 7.36488 2.76634 6.85001 3.40146 6.85001C4.03659 6.85001 4.55146 7.36488 4.55146 8.00001Z" fill="currentColor"></path><path d="M9.1476 8.00001C9.1476 8.63513 8.63273 9.15001 7.9976 9.15001C7.36248 9.15001 6.8476 8.63513 6.8476 8.00001C6.8476 7.36488 7.36248 6.85001 7.9976 6.85001C8.63273 6.85001 9.1476 7.36488 9.1476 8.00001Z" fill="currentColor"></path><path d="M13.7486 8.00001C13.7486 8.63513 13.2338 9.15001 12.5986 9.15001C11.9635 9.15001 11.4486 8.63513 11.4486 8.00001C11.4486 7.36488 11.9635 6.85001 12.5986 6.85001C13.2338 6.85001 13.7486 7.36488 13.7486 8.00001Z" fill="currentColor"></path></svg></div><div class="ds-focus-ring"></div></div></div></div></div></div><div class="_4cbcd96 _7d10bb1"></div><div class="_7780f2e"><div class="_765a5cd"><div class="_660ca72"><div class="_2be88ba _1551317"><div class="f8d1e4c0 the-header"></div><div class="_1aa2651 the-header"><div role="button" class="ds-button ds-button--iconLabelPrimary ds-button--icon ds-button--capsule ds-button--xl ds-button--icon-relative-m" tabindex="0"><div class="ds-button__background"></div><div class="ds-button__icon ds-button__icon--last-child"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.2027 4.90034V6.43655H2.79724V4.90034H17.2027Z" fill="currentColor"></path><path d="M10.9603 13.0634V14.5996H2.79724V13.0634H10.9603Z" fill="currentColor"></path></svg></div></div><div class="_9986c0c"></div><div class="_19943ce"></div><div class="_348bebe"></div><div role="button" class="ds-button ds-button--iconLabelPrimary ds-button--icon ds-button--capsule ds-button--xl ds-button--icon-relative-m" tabindex="0" style="min-width: 44px;"><div class="ds-button__background"></div><div class="ds-button__icon ds-button__icon--last-child"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.99994 1.22943C5.15598 1.22943 1.22937 5.15604 1.22937 10C1.22937 11.3437 1.5319 12.6189 2.07359 13.7592L2.40673 14.4596L3.8065 13.7942L3.4743 13.0939L3.31625 12.7371C2.97051 11.8938 2.77962 10.97 2.77962 10C2.77962 6.01243 6.01237 2.77968 9.99994 2.77968C13.9875 2.77968 17.2203 6.01243 17.2203 10C17.2203 13.9876 13.9875 17.2203 9.99994 17.2203C9.18334 17.2203 8.5858 17.1622 8.05597 17.0159C7.53397 16.8717 7.03885 16.6305 6.44609 16.2171C5.57744 15.6112 4.33224 15.3975 3.30584 16.0458L3.28975 16.0562L3.27366 16.0676L2.59034 16.5484L3.10425 18.0825L4.14438 17.35C4.51831 17.1207 5.07296 17.1507 5.55834 17.4891C6.26058 17.9789 6.91499 18.3092 7.64333 18.5103C8.3639 18.7093 9.11779 18.7706 9.99994 18.7706C14.8439 18.7706 18.7705 14.844 18.7705 10C18.7705 5.15604 14.8439 1.22943 9.99994 1.22943ZM9.21913 6.36949V9.22487H6.36943V10.7751H9.21913V13.6305H10.7694V10.7751H13.6304V9.22487H10.7694V6.36949H9.21913Z" fill="currentColor"></path></svg></div></div></div></div><div class="_9a2f8e4"><div class="_5758a85"><div class="_6c7e7df"><div class="_5431ea8"><div class="ds-icon" style="font-size: 25px; width: 25px; height: 25px;"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.6516 6.87891L6.85747 15.2114C6.60065 15.5263 6.09224 15.302 6.15178 14.9L6.8431 10.2324C6.87889 9.99077 6.69167 9.77378 6.44742 9.77378L2.65846 9.77378C2.32132 9.77378 2.1354 9.38229 2.34845 9.121L9.14256 0.788538C9.39938 0.473563 9.90779 0.697894 9.84825 1.09992L9.15693 5.76753C9.12114 6.00914 9.30836 6.22613 9.55261 6.22613L13.3416 6.22613C13.6787 6.22613 13.8646 6.61762 13.6516 6.87891Z" fill="currentColor"></path></svg></div></div><span>Быстрый режим</span></div></div><div style="height: 6px;"></div><div class="aaff8b8f"><div class="_77cefa5 _9996a53 focused _1d5e44c"><div class="b40079d7 _2113217"><div class="_9ebd84c"></div><div class="_6d1b417"><div class="ds-animated-size-item" style="--duration: 200ms; margin-left: 0px;"><div class="_25c7358 dafb6286" tabindex="0"><div class="cd314545"><div class="_1c3b90b"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M8.48924 28H19.5108C21.6479 28 22.7165 28 23.5594 27.6509C24.6833 27.1853 25.5762 26.2924 26.0417 25.1685C26.3909 24.3256 26.3909 23.257 26.3909 21.1199V8.79443C26.3909 8.32877 26.3909 8.09593 26.3471 7.87507C26.2887 7.58058 26.173 7.30042 26.0067 7.05048C25.882 6.86303 25.7177 6.69799 25.3893 6.36792L20.0611 1.01354C19.7304 0.681235 19.5651 0.515081 19.3769 0.38885C19.126 0.220541 18.8443 0.103463 18.5481 0.0443412C18.3259 0 18.0915 0 17.6226 0H8.48924C6.35209 0 5.28351 0 4.4406 0.349145C3.31672 0.814671 2.4238 1.70759 1.95828 2.83147C1.60913 3.67438 1.60913 4.74296 1.60913 6.88011V21.1199C1.60913 23.257 1.60913 24.3256 1.95828 25.1685C2.4238 26.2924 3.31672 27.1853 4.4406 27.6509C5.28351 28 6.35209 28 8.48924 28Z" fill="#418CFF"></path><path d="M26.3909 7.37445L19.0525 0V3.77445C19.0525 4.89271 19.0525 5.45184 19.2352 5.89289C19.4788 6.48096 19.946 6.94818 20.5341 7.19176C20.9751 7.37445 21.5342 7.37445 22.6525 7.37445H26.3909Z" fill="white" fill-opacity=".7"></path><path d="M8.10132 12.6846H19.8948" stroke="white" stroke-width="1.6"></path><path d="M8.10132 16.4688H19.8948" stroke="white" stroke-width="1.6"></path><path d="M8.10132 20.252H16.0199" stroke="white" stroke-width="1.6"></path></svg></div><div class="_158cea4"><div class="_967f3f9"><div class="e70accd6">``html.txt</div><div class="d0fee470"></div></div><div class="_7103a25 _078ccb5"><button type="button" class="cecc5fcd"><div class="ds-icon c2436d6d" style="--dsl-icon-svg-height: 8px; --dsl-icon-svg-width: 8px; font-size: 12px; width: 12px; height: 12px;"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.588429 5.147807C13.588429 4.739638 13.587271 4.403003 13.582013 4.118684L1.703098 15.99968L0.85155 15.148178L0 14.294485L11.878915 2.413442C11.594721 2.408199 11.257569 2.409154 10.849776 2.409154H2.400594V0.000001H10.849776C11.644471 0.000001 12.338899 -0.001059 12.901622 0.059909C13.486363 0.123352 14.071136 0.265493 14.598303 0.648292C14.886598 0.857751 15.141981 1.110984 15.351433 1.399281C15.734578 1.926807 15.876362 2.512925 15.939743 3.098105C16.000775 3.660718 15.99968 4.353347 15.99968 5.147807V13.599133H13.588429V5.147807Z" fill="currentColor"></path></svg></div>Вставить оригинал</button></div></div><div class="_8402d8c" tabindex="0"><div class="ds-icon" style="font-size: 14px; width: 14px; height: 14px;"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.6074 4.40278L8.00975 6.99973L10.6074 9.59739L9.59736 10.6074L6.9997 8.00978L4.40274 10.6074L3.3927 9.59739L5.98966 6.99973L3.3927 4.40278L4.40274 3.39273L6.9997 5.98969L9.59736 3.39273L10.6074 4.40278Z" fill="currentColor"></path></svg></div><div class="ds-focus-ring" style="--dsl-focus-ring-offset: -2px;"></div></div></div><div class="ds-focus-ring"></div></div></div></div><div class="_0d5f28a"></div></div><div class="_020ab5b"><div class="_24fad49"><div class="ds-scroll-area__gutters" style="--container-height: 60px; position: absolute; inset: 0px; width: 100%;"><div class="ds-scroll-area__horizontal-gutter" style="left: 2px; right: 2px; display: block; bottom: 2px; height: 6px;"><div class="ds-scroll-area__horizontal-bar" style="display: none;"></div></div><div class="ds-scroll-area__vertical-gutter" style="right: 2px; top: 16px; bottom: 2px; width: 6px;"><div class="ds-scroll-area__vertical-bar" style="display: none;"></div></div></div><textarea class="_27c9245 ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled d96f2d2a" placeholder="Сообщение для DeepSeek" rows="2" autocomplete="off" name="search" style="--container-height: 60px;"></textarea><div class="b13855df">
+</div></div><div class="ec4f5d61"><div class="_58b31c9"><div tabindex="0" aria-pressed="false" class="f79352dc ds-toggle-button ds-toggle-button--m" style="transform: translateZ(0px);"><div class="ds-toggle-button__icon"><div class="ds-icon" style="font-size: inherit;"><div class="_46d2264" aria-hidden="true"><div style="width: 14px; height: 14px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" width="16" height="16" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;"><defs><clippath id="__lottie_element_2"><rect width="16" height="16" x="0" y="0"></rect></clippath></defs><g clip-path="url(#__lottie_element_2)"><g transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="rgb(15,17,20)" fill-opacity="1" d=" M8,6.769999980926514 C8.678836822509766,6.769999980926514 9.229999542236328,7.321163177490234 9.229999542236328,8 C9.229999542236328,8.678836822509766 8.678836822509766,9.229999542236328 8,9.229999542236328 C7.321163177490234,9.229999542236328 6.769999980926514,8.678836822509766 6.769999980926514,8 C6.769999980926514,7.321163177490234 7.321163177490234,6.769999980926514 8,6.769999980926514z"></path></g></g><g transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(15,17,20)" stroke-opacity="1" stroke-width="1.4" d=" M10.730999946594238,10.730999946594238 C7.526000022888184,13.935999870300293 3.7060000896453857,15.3100004196167 2.197999954223633,13.802000045776367 C0.6899999976158142,12.293999671936035 2.065000057220459,8.473999977111816 5.269999980926514,5.269000053405762 C8.475000381469727,2.063999891281128 12.293999671936035,0.6899999976158142 13.802000045776367,2.197999954223633 C15.3100004196167,3.7060000896453857 13.935999870300293,7.526000022888184 10.730999946594238,10.730999946594238z"></path></g></g><g transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(15,17,20)" stroke-opacity="1" stroke-width="1.4" d=" M10.730999946594238,5.269000053405762 C13.935999870300293,8.473999977111816 15.3100004196167,12.293999671936035 13.802000045776367,13.802000045776367 C12.293999671936035,15.3100004196167 8.475000381469727,13.935999870300293 5.269999980926514,10.730999946594238 C2.065000057220459,7.526000022888184 0.6899999976158142,3.7060000896453857 2.197999954223633,2.197999954223633 C3.7060000896453857,0.6899999976158142 7.526000022888184,2.063999891281128 10.730999946594238,5.269000053405762z"></path></g></g></g></svg></div></div></div></div><span class="_6dbc175">Глубокое мышление</span><div class="ds-focus-ring" style="--dsl-focus-ring-offset: -1px;"></div></div><div tabindex="0" aria-pressed="true" class="f79352dc ds-toggle-button ds-toggle-button--m ds-toggle-button--selected" style="transform: translateZ(0px);"><div class="ds-toggle-button__icon"><div class="ds-icon" style="font-size: inherit;"><div class="_46d2264" aria-hidden="true"><div style="width: 14px; height: 14px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" width="16" height="16" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;"><defs><clippath id="__lottie_element_13"><rect width="16" height="16" x="0" y="0"></rect></clippath></defs><g clip-path="url(#__lottie_element_13)"><g style="display: none;"><g><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"></path></g></g><g transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(15,17,20)" stroke-opacity="1" stroke-width="1.4" d=" M7.999599933624268,14.849200248718262 C9.598299980163574,14.849200248718262 10.894100189208984,11.78279972076416 10.894100189208984,8 C10.894100189208984,4.217199802398682 9.598299980163574,1.1509000062942505 7.999599933624268,1.1509000062942505"></path></g></g><g transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(15,17,20)" stroke-opacity="1" stroke-width="1.4" d=" M7.999599933624268,14.849200248718262 C6.400899887084961,14.849200248718262 5.105000019073486,11.78279972076416 5.105000019073486,8 C5.105000019073486,4.217199802398682 6.400899887084961,1.1509000062942505 7.999599933624268,1.1509000062942505"></path></g></g><g transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(15,17,20)" stroke-opacity="1" stroke-width="1.4" d=" M7.999599933624268,1.1509000062942505 C11.782400131225586,1.1509000062942505 14.848699569702148,4.217199802398682 14.848699569702148,8 C14.848699569702148,11.78279972076416 11.782400131225586,14.849200248718262 7.999599933624268,14.849200248718262 C4.216800212860107,14.849200248718262 1.1504000425338745,11.78279972076416 1.1504000425338745,8 C1.1504000425338745,4.217199802398682 4.216800212860107,1.1509000062942505 7.999599933624268,1.1509000062942505z"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(15,17,20)" stroke-opacity="1" stroke-width="1.4" d=" M1.6399999856948853,8 C1.6399999856948853,8 14.359999656677246,8 14.359999656677246,8"></path></g></g></g></svg></div></div></div></div><span class="_6dbc175">Умный поиск</span><div class="ds-focus-ring" style="--dsl-focus-ring-offset: -1px;"></div></div></div><div class="bf38813a"><div role="button" class="ds-button ds-button--iconLabelPrimary ds-button--icon ds-button--capsule ds-button--s ds-button--icon-relative-m f02f0e25" tabindex="0" style="--dsl-button-height: 34px;"><div class="ds-button__background"></div><div class="ds-button__icon ds-button__icon--last-child"><div class="ds-icon" style="font-size: inherit;"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5498 9.75V5H6.9502V9.75C6.9502 10.3299 7.4201 10.7998 8 10.7998C8.5799 10.7998 9.0498 10.3299 9.0498 9.75V4.5C9.0498 2.9536 7.7964 1.7002 6.25 1.7002C4.7036 1.7002 3.4502 2.9536 3.4502 4.5V9.75C3.4502 12.2629 5.4871 14.2998 8 14.2998C10.5129 14.2998 12.5498 12.2629 12.5498 9.75V4H13.9502V9.75C13.9502 13.0361 11.2861 15.7002 8 15.7002C4.71391 15.7002 2.0498 13.0361 2.0498 9.75V4.5C2.04981 2.1804 3.9304 0.299806 6.25 0.299805C8.5696 0.299805 10.4502 2.1804 10.4502 4.5V9.75C10.4502 11.1031 9.3531 12.2002 8 12.2002C6.6469 12.2002 5.5498 11.1031 5.5498 9.75Z" fill="currentColor"></path></svg></div></div></div><input type="file" multiple="" accept=".wxml,.wxss,.wxs,.axml,.acss,.sjs,.swan,.ttml,.ttss,.qml,.qss,.pdf,.png,.jpg,.jpeg,.svg,.svgz,.bmp,.gif,.webp,.ico,.xbm,.dib,.pjp,.tif,.pjpeg,.avif,.apng,.tiff,.jfif,.txt,.md,.csv,.tsv,.html,.json,.log,.dot,.go,.h,.c,.cpp,.cxx,.cc,.cs,.java,.js,.css,.jsp,.php,.py,.py3,.asp,.yaml,.yml,.ini,.conf,.ts,.tsx,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.abap,.asc,.ash,.ampl,.mod,.g4,.apib,.apl,.dyalog,.asax,.ascx,.ashx,.asmx,.aspx,.axd,.dats,.hats,.sats,.as,.adb,.ada,.ads,.agda,.als,.apacheconf,.vhost,.cls,.applescript,.scpt,.arc,.ino,.asciidoc,.adoc,.aj,.asm,.a51,.inc,.nasm,.aug,.ahk,.ahkl,.au3,.awk,.auk,.gawk,.mawk,.nawk,.bat,.cmd,.befunge,.bison,.bb,.decls,.bmx,.bsv,.boo,.b,.bf,.brs,.bro,.cats,.idc,.w,.cake,.cshtml,.csx,.c++,.cp,.h++,.hh,.hpp,.hxx,.inl,.ipp,.tcc,.tpp,.c-objdump,.chs,.clp,.cmake,.in,.cob,.cbl,.ccp,.cobol,.cpy,.capnp,.mss,.ceylon,.chpl,.ch,.ck,.cirru,.clw,.icl,.dcl,.click,.clj,.boot,.cl2,.cljc,.cljs,.hl,.cljscm,.cljx,.hic,.coffee,._coffee,.cjsx,.cjs,.cts,.mjs,.mts,.cson,.iced,.cfm,.cfml,.cfc,.lisp,.asd,.cl,.l,.lsp,.ny,.podsl,.sexp,.cps,.coq,.v,.cppobjdump,.c++-objdump,.c++objdump,.cpp-objdump,.cxx-objdump,.creole,.cr,.feature,.cu,.cuh,.cy,.pyx,.pxd,.pxi,.d,.di,.d-objdump,.com,.dm,.zone,.arpa,.darcspatch,.dpatch,.dart,.diff,.patch,.dockerfile,.djs,.dylan,.dyl,.intr,.lid,.E,.ecl,.eclxml,.sch,.brd,.epj,.e,.ex,.exs,.elm,.el,.emacs,.desktop,.em,.emberscript,.erl,.es,.escript,.hrl,.xrl,.yrl,.fs,.fsi,.fsx,.fx,.flux,.f90,.f,.f03,.f08,.f77,.f95,.for,.fpp,.factor,.fy,.fancypack,.fan,.fth,.4th,.forth,.fr,.frt,.ftl,.g,.gco,.gcode,.gms,.gap,.gd,.gi,.tst,.s,.ms,.glsl,.fp,.frag,.frg,.fsh,.fshader,.geo,.geom,.glslv,.gshader,.shader,.vert,.vrx,.vsh,.vshader,.gml,.kid,.ebuild,.eclass,.po,.pot,.glf,.gp,.gnu,.gnuplot,.plot,.plt,.golo,.gs,.gst,.gsx,.vark,.grace,.gradle,.gf,.graphql,.gv,.man,.1in,.1m,.1x,.3in,.3m,.3qt,.3x,.me,.n,.rno,.roff,.groovy,.grt,.gtpl,.gvy,.gsp,.hcl,.tf,.hlsl,.fxh,.hlsli,.htm,.st,.xht,.xhtml,.mustache,.jinja,.eex,.erb,.deface,.phtml,.http,.haml,.handlebars,.hbs,.hb,.hs,.hsc,.hx,.hxsl,.hy,.pro,.dlm,.ipf,.cfg,.prefs,.properties,.irclog,.weechatlog,.idr,.lidr,.ni,.i7x,.iss,.io,.ik,.thy,.ijs,.flex,.jflex,.geojson,.lock,.topojson,.json5,.jsonld,.jq,.jsx,.jade,.j,._js,.bones,.es6,.jake,.jsb,.jscad,.jsfl,.jsm,.jss,.njs,.pac,.sjs,.ssjs,.sublime-build,.sublime-commands,.sublime-completions,.sublime-keymap,.sublime-macro,.sublime-menu,.sublime-mousemap,.sublime-project,.sublime-settings,.sublime-theme,.sublime-workspace,.sublime_metrics,.sublime_session,.xsjs,.xsjslib,.jl,.ipynb,.krl,.kicad_pcb,.kit,.kt,.ktm,.kts,.lfe,.ll,.lol,.lsl,.lslp,.lvproj,.lasso,.las,.lasso8,.lasso9,.ldml,.latte,.lean,.hlean,.less,.lex,.ly,.ily,.m,.ld,.lds,.liquid,.lagda,.litcoffee,.lhs,.ls,._ls,.xm,.x,.xi,.lgt,.logtalk,.lookml,.lua,.fcgi,.nse,.pd_lua,.rbxs,.wlua,.mumps,.m4,.mcfunction,.mcr,.mtml,.muf,.mak,.mk,.mkfile,.mako,.mao,.markdown,.mkd,.mkdn,.mkdown,.ron,.mask,.mathematica,.cdf,.ma,.map,.mt,.nb,.nbp,.wl,.wlt,.matlab,.maxpat,.maxhelp,.maxproj,.mxt,.pat,.mediawiki,.wiki,.moo,.metal,.minid,.druby,.duby,.mir,.mirah,.mo,.mms,.mmk,.monkey,.moon,.myt,.ncl,.nl,.nsi,.nsh,.axs,.axi,.nlogo,.nginxconf,.nim,.nimrod,.ninja,.nit,.nix,.nu,.numpy,.numpyw,.numsc,.ml,.eliom,.eliomi,.ml4,.mli,.mll,.mly,.objdump,.mm,.sj,.omgrofl,.opa,.opal,.opencl,.p,.scad,.org,.ox,.oxh,.oxo,.oxygene,.oz,.pwn,.aw,.ctp,.php3,.php4,.php5,.php6,.php7,.php8,.phps,.phpt,.pls,.pck,.pkb,.pks,.plb,.plsql,.sql,.pov,.pan,.psc,.parrot,.pasm,.pir,.pas,.dfm,.dpr,.lpr,.pp,.pl,.al,.cgi,.perl,.ph,.plx,.pm,.pod,.psgi,.t,.6pl,.6pm,.nqp,.p6,.p6l,.p6m,.pl6,.pm6,.pkl,.pig,.pike,.pmod,.pogo,.pony,.ps,.eps,.ps1,.psd1,.psm1,.pde,.prolog,.yap,.spin,.proto,.pub,.pd,.pb,.pbi,.purs,.bzl,.gyp,.lmi,.pyde,.pyi,.pyp,.pyt,.pyw,.rpy,.tac,.wsgi,.xpy,.pytb,.qml,.qbs,.pri,.r,.rd,.rsx,.raml,.rdoc,.rbbas,.rbfrm,.rbmnu,.rbres,.rbtbar,.rbuistate,.rhtml,.rmd,.rkt,.rktd,.rktl,.scrbl,.rl,.raw,.reb,.r2,.r3,.rebol,.red,.reds,.cw,.rs,.rsh,.robot,.rg,.rb,.builder,.gemspec,.god,.irbrc,.jbuilder,.mspec,.pluginspec,.podspec,.rabl,.rake,.rbuild,.rbw,.rbx,.ru,.ruby,.thor,.watchr,.sas,.scss,.smt2,.smt,.sparql,.rq,.sqf,.hqf,.cql,.ddl,.prc,.tab,.udf,.viw,.db2,.ston,.sage,.sagews,.sls,.sass,.scala,.sbt,.sc,.scaml,.scm,.sld,.sps,.ss,.sci,.sce,.self,.sh,.bash,.bats,.command,.ksh,.tmux,.tool,.zsh,.sh-session,.shen,.sl,.slim,.smali,.tpl,.sp,.sma,.nut,.stan,.ML,.fun,.sig,.sml,.do,.ado,.doh,.ihlp,.mata,.matah,.sthlp,.styl,.scd,.swift,.sv,.svh,.vh,.toml,.txl,.tcl,.adp,.tm,.tcsh,.csh,.tex,.aux,.bbx,.bib,.cbx,.dtx,.ins,.lbx,.ltx,.mkii,.mkiv,.mkvi,.sty,.toc,.tea,.no,.textile,.thrift,.tu,.ttl,.twig,.upc,.anim,.asset,.meta,.prefab,.unity,.uno,.uc,.ur,.urs,.vcl,.vhdl,.vhd,.vhf,.vhi,.vho,.vhs,.vht,.vhw,.vala,.vapi,.veo,.vim,.vb,.bas,.frm,.frx,.vba,.vbhtml,.vbs,.volt,.vue,.owl,.webidl,.x10,.xc,.xml,.ant,.axml,.ccxml,.clixml,.cproject,.csl,.csproj,.ct,.dita,.ditamap,.ditaval,.config,.dotsettings,.filters,.fsproj,.fxml,.glade,.grxml,.iml,.ivy,.jelly,.jsproj,.kml,.launch,.mdpolicy,.mxml,.nproj,.nuspec,.odd,.osm,.plist,.props,.ps1xml,.psc1,.pt,.rdf,.rss,.scxml,.srdf,.storyboard,.stTheme,.sublime-snippet,.targets,.tmCommand,.tml,.tmLanguage,.tmPreferences,.tmSnippet,.tmTheme,.ui,.urdf,.ux,.vbproj,.vcxproj,.vssettings,.vxml,.wsdl,.wsf,.wxi,.wxl,.wxs,.x3d,.xacro,.xaml,.xib,.xlf,.xliff,.xmi,.dist,.xproj,.xsd,.xul,.zcml,.xsp-config,.metadata,.xpl,.xproc,.xquery,.xq,.xql,.xqm,.xqy,.xs,.xslt,.xsl,.xojo_code,.xojo_menu,.xojo_report,.xojo_script,.xojo_toolbar,.xojo_window,.xtend,.reek,.rviz,.sublime-syntax,.syntax,.yang,.y,.yacc,.yy,.zep,.zimpl,.zmpl,.zpl,.ec,.eh,.edn,.fish,.mu,.nc,.ooc,.rst,.rest,.wisp,.prg,.prw,.gitignore,.gitkeep,.gitmodules,.example,.avifs,.blp,.bufr,.bw,.cur,.dcx,.dds,.emf,.fit,.fits,.flc,.fli,.ftc,.ftu,.gbr,.grib,.h5,.hdf,.hif,.icb,.icns,.iim,.im,.j2c,.j2k,.jp2,.jpc,.jpe,.jpf,.jpx,.mpeg,.mpg,.msp,.pbm,.pcd,.pcx,.pfm,.pgm,.pnm,.ppm,.psd,.pxr,.qoi,.ras,.rgb,.rgba,.sgi,.tga,.vda,.vst,.wmf,.xpm,.epub,.mobi" style="display: none;"><div style="width: fit-content;"><div role="button" class="ds-button ds-button--primary ds-button--filled ds-button--circle ds-button--m ds-button--icon-relative-m _52c986b" style="--dsl-button-height: 34px;" tabindex="0"><div class="ds-button__background"></div><div class="ds-button__icon ds-button__icon--last-child"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.3125 0.981587C8.66767 1.0545 8.97902 1.20558 9.2627 1.43374C9.48724 1.61438 9.73029 1.85933 9.97949 2.10854L14.707 6.83608L13.293 8.25014L9 3.95717V15.0431H7V3.95717L2.70703 8.25014L1.29297 6.83608L6.02051 2.10854C6.26971 1.85933 6.51277 1.61438 6.7373 1.43374C6.97662 1.24126 7.28445 1.04542 7.6875 0.981587C7.8973 0.94841 8.1031 0.956564 8.3125 0.981587Z" fill="currentColor"></path></svg></div></div></div></div></div></div></div></div></div></div></div><div class="_519be07 _3f79b51 _27fc06b" aria-hidden="false"><div class="_9670fcb"></div><div class="_26c5bc2" style="width: var(--sidebar-width); max-width: inherit;"><div class="_2c74d7a"><div class="_560dc64"></div><div role="heading">``html.txt</div><div class="f59a0d3b"></div><div role="button" class="ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--m ds-button--icon-relative-m _5d271a3" tabindex="0"><div class="ds-button__background"></div><div class="ds-button__icon ds-button__icon--last-child"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.1871 13.1265L13.1265 14.1872L1.81275 2.87347L2.87341 1.81281L14.1871 13.1265Z" fill="currentColor"></path><path d="M13.1265 1.81282L14.1871 2.87348L2.8734 14.1872L1.81274 13.1265L13.1265 1.81282Z" fill="currentColor"></path></svg></div></div></div><div class="fcd12e6e ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled" style="--container-height: 652px;"><div class="ds-scroll-area__gutters" style="--container-height: 652px; position: sticky; top: 0px; left: 0px; right: 0px; width: 100%; height: 0px;"><div class="ds-scroll-area__horizontal-gutter" style="left: 3px; right: 3px; display: block; top: calc(var(--container-height) - 11px); height: 8px;"><div class="ds-scroll-area__horizontal-bar" style="display: none;"></div></div><div class="ds-scroll-area__vertical-gutter" style="right: 3px; top: 3px; bottom: calc(0px - var(--container-height) + 3px); width: 8px;"><div class="ds-scroll-area__vertical-bar" style="top: 0px; height: 25.0919px;"></div></div></div><div class="d1d2eae1"><div class="a44e8e96 scrollable"><div class="abbe3c45">``html
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ru"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8" /&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+  &lt;title&gt;Вместе восстановим НПЗ&lt;/title&gt;
+  &lt;style&gt;
+    /* ===== ОБЩИЕ СТИЛИ ===== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+      background: #f4f6fa;
+      color: #1a1f2e;
+      line-height: 1.5;
+    }
+    a { text-decoration: none; color: inherit; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    button { cursor: pointer; }
+
+    /* ===== ШАПКА ===== */
+    .header {
+      background: #0b1424;
+      color: #fff;
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    .header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .logo span { color: #e85a2c; }
+    .nav {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .nav a {
+      font-size: 16px;
+      padding: 6px 0;
+      border-bottom: 2px solid transparent;
+      transition: 0.2s;
+    }
+    .nav a:hover, .nav a.active {
+      border-bottom-color: #e85a2c;
+      color: #e85a2c;
+    }
+    .btn-donate {
+      background: #e85a2c;
+      padding: 8px 22px;
+      border-radius: 30px;
+      font-weight: 600;
+      color: #fff !important;
+      border: none;
+      transition: 0.3s;
+    }
+    .btn-donate:hover {
+      background: #c94b1f;
+      transform: scale(1.03);
+    }
+    .burger {
+      display: none;
+      font-size: 28px;
+      background: none;
+      border: none;
+      color: #fff;
+    }
+
+    /* ===== СТРАНИЦЫ (вкладки) ===== */
+    .page {
+      display: none;
+      padding: 40px 0 60px;
+      animation: fade 0.4s ease;
+    }
+    .page.active { display: block; }
+    @keyframes fade { from { opacity: 0.2; } to { opacity: 1; } }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    h2 {
+      font-size: 30px;
+      margin: 30px 0 16px;
+    }
+    h3 { font-size: 22px; margin: 20px 0 10px; }
+    p { margin-bottom: 16px; font-size: 18px; }
+
+    /* ===== ГЛАВНАЯ ===== */
+    .hero {
+      background: linear-gradient(135deg, #0b1424 0%, #1a2a4a 100%);
+      color: #fff;
+      padding: 60px 20px;
+      border-radius: 20px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .hero h1 { font-size: 48px; }
+    .hero p { font-size: 20px; max-width: 700px; margin: 16px auto; }
+    .hero-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 20px 0; }
+    .btn-primary, .btn-secondary {
+      padding: 14px 40px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 18px;
+      border: none;
+      transition: 0.3s;
+    }
+    .btn-primary { background: #e85a2c; color: #fff; }
+    .btn-primary:hover { background: #c94b1f; transform: translateY(-2px); }
+    .btn-secondary { background: #2a5f8a; color: #fff; }
+    .btn-secondary:hover { background: #1e4a6b; transform: translateY(-2px); }
+    .ticker {
+      background: #1e2f4a;
+      padding: 12px;
+      border-radius: 12px;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    /* ===== СЧЁТЧИКИ ===== */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin: 30px 0;
+    }
+    .stat-card {
+      background: #fff;
+      padding: 24px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .stat-card .number {
+      font-size: 36px;
+      font-weight: 800;
+      color: #0b1424;
+    }
+    .stat-card .label { font-size: 16px; color: #555; }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin: 30px 0;
+    }
+    .card {
+      background: #fff;
+11:37
+
+
+padding: 24px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .card img { width: 100%; border-radius: 12px; margin-bottom: 12px; }
+
+    /* ===== НОВОСТИ ===== */
+    .news-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+    .news-item { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+    .news-item img { width: 100%; height: 180px; object-fit: cover; }
+    .news-item .text { padding: 16px; }
+    .news-item .date { color: #888; font-size: 14px; }
+    .news-item h4 { margin: 8px 0; }
+
+    /* ===== ВКЛАДКИ ПОМОЩИ ===== */
+    .tabs { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 30px; }
+    .tab-btn {
+      padding: 12px 28px;
+      background: #e0e6f0;
+      border: none;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .tab-btn.active { background: #0b1424; color: #fff; }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    .form-group { margin: 16px 0; }
+    .form-group label { display: block; font-weight: 600; margin-bottom: 6px; }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    .form-group textarea { height: 100px; }
+
+    /* ===== ТАЙМЛАЙН ===== */
+    .timeline { position: relative; padding-left: 30px; border-left: 3px solid #e85a2c; }
+    .timeline-item { margin-bottom: 30px; }
+    .timeline-item .date { font-weight: 700; color: #e85a2c; }
+    .timeline-item p { margin: 6px 0; }
+
+    /* ===== FAQ ===== */
+    .faq-item { border-bottom: 1px solid #ddd; padding: 16px 0; }
+    .faq-question { font-weight: 700; cursor: pointer; display: flex; justify-content: space-between; }
+    .faq-question::after { content: '+'; font-size: 24px; }
+    .faq-item.open .faq-question::after { content: '−'; }
+    .faq-answer { display: none; padding-top: 10px; color: #333; }
+    .faq-item.open .faq-answer { display: block; }
+
+    /* ===== КОНТАКТЫ ===== */
+    .contacts-row { display: flex; gap: 40px; flex-wrap: wrap; margin-top: 30px; }
+    .contacts-row .info { flex: 1; }
+    .contacts-row .form { flex: 2; }
+
+    /* ===== ФУТЕР ===== */
+    .footer {
+      background: #0b1424;
+      color: #aaa;
+      padding: 40px 0;
+      margin-top: 40px;
+    }
+    .footer .container { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
+    .footer a { color: #ccc; }
+    .footer a:hover { color: #fff; }
+    .socials { display: flex; gap: 16px; margin-top: 10px; }
+
+    /* ===== АДАПТИВ ===== */
+    @media (max-width: 900px) {
+      .stats { grid-template-columns: repeat(2,1fr); }
+      .grid-3 { grid-template-columns: 1fr 1fr; }
+      .news-grid { grid-template-columns: 1fr 1fr; }
+      .footer .container { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 700px) {
+      .nav { display: none; flex-direction: column; width: 100%; margin-top: 16px; }
+      .nav.open { display: flex; }
+      .burger { display: block; }
+      .hero h1 { font-size: 32px; }
+      .grid-3 { grid-template-columns: 1fr; }
+      .news-grid { grid-template-columns: 1fr; }
+      .stats { grid-template-columns: 1fr 1fr; }
+      .contacts-row { flex-direction: column; }
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;!-- ===== ШАПКА ===== --&gt;
+&lt;header class="header"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="logo"&gt;#&lt;span&gt;Вместе&lt;/span&gt;Восстановим&lt;/div&gt;
+    &lt;button class="burger" id="burger"&gt;☰&lt;/button&gt;
+    &lt;nav class="nav" id="nav"&gt;
+      &lt;a href="#" data-page="home" class="active"&gt;Главная&lt;/a&gt;
+      &lt;a href="#" data-page="about"&gt;О проекте&lt;/a&gt;
+      &lt;a href="#" data-page="news"&gt;Новости&lt;/a&gt;
+      &lt;a href="#" data-page="help"&gt;Как помочь&lt;/a&gt;
+      &lt;a href="#" data-page="support"&gt;Поддержка&lt;/a&gt;
+      &lt;a href="#" data-page="recovery"&gt;Восстановление&lt;/a&gt;
+      &lt;a href="#" data-page="faq"&gt;Библиотека&lt;/a&gt;
+11:37
+&lt;a href="#" data-page="contacts"&gt;Контакты&lt;/a&gt;
+      &lt;a href="#" data-page="help" class="btn-donate"&gt;Помочь&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+
+&lt;!-- ===== ГЛАВНАЯ ===== --&gt;
+&lt;div id="home" class="page active"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="hero"&gt;
+      &lt;h1&gt;Завод остановлен — мы не остановимся&lt;/h1&gt;
+      &lt;p&gt;Атака на НПЗ — удар по всей стране. Но враг просчитался: народ встал плечом к плечу. Тысячи уже помогают восстанавливать производство. Каждый рубль, каждый час работы приближает пуск завода и срывает планы противника. Присоединяйся!&lt;/p&gt;
+      &lt;div class="hero-buttons"&gt;
+        &lt;a href="#" data-page="help" class="btn-primary"&gt;Перевести средства&lt;/a&gt;
+        &lt;a href="#" data-page="help" class="btn-secondary"&gt;Стать волонтёром&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class="ticker" id="ticker"&gt;
+        Собрано: &lt;span id="sum"&gt;0&lt;/span&gt; ₽ · Волонтёров: &lt;span id="vol"&gt;0&lt;/span&gt; · Восстановлено: &lt;span id="pct"&gt;0&lt;/span&gt;% · Дней без аварий: &lt;span id="days"&gt;0&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="stats" id="stats"&gt;
+      &lt;div class="stat-card"&gt;&lt;div class="number" data-count="47800000"&gt;0&lt;/div&gt;&lt;div class="label"&gt;Собрано средств (₽)&lt;/div&gt;&lt;/div&gt;
+      &lt;div class="stat-card"&gt;&lt;div class="number" data-count="1250"&gt;0&lt;/div&gt;&lt;div class="label"&gt;Волонтёров в строю&lt;/div&gt;&lt;/div&gt;
+      &lt;div class="stat-card"&gt;&lt;div class="number" data-count="63"&gt;0&lt;/div&gt;&lt;div class="label"&gt;Восстановлено оборудования (%)&lt;/div&gt;&lt;/div&gt;
+      &lt;div class="stat-card"&gt;&lt;div class="number" data-count="42"&gt;0&lt;/div&gt;&lt;div class="label"&gt;Дней без аварий&lt;/div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;h2&gt;Почему это важно&lt;/h2&gt;
+    &lt;div class="grid-3"&gt;
+      &lt;div class="card"&gt;&lt;h3&gt;🤝  Единство&lt;/h3&gt;&lt;p&gt;Нас не разделить. Рабочие, инженеры, домохозяйки, студенты — все вносят свой вклад. Мы — одна сила.&lt;/p&gt;&lt;/div&gt;
+      &lt;div class="card"&gt;&lt;h3&gt;⚙️  Восстановление&lt;/h3&gt;&lt;p&gt;Каждый день бригады трудятся в две смены. Уже запущены три агрегата, идёт подача топлива в регионы.&lt;/p&gt;&lt;/div&gt;
+      &lt;div class="card"&gt;&lt;h3&gt;🇷🇺  Срыв планов врага&lt;/h3&gt;&lt;p&gt;Чем быстрее заработает завод, тем быстрее мы восстановим энергобезопасность и докажем: нас не сломить.&lt;/p&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;h2&gt;Свежие новости&lt;/h2&gt;
+    &lt;div class="news-grid"&gt;
+      &lt;div class="news-item"&gt;&lt;img src="https://via.placeholder.com/400x200/0b1424/e85a2c?text=Новость+1" alt=""&gt;&lt;div class="text"&gt;&lt;div class="date"&gt;25.08.2026&lt;/div&gt;&lt;h4&gt;Запущен второй агрегат&lt;/h4&gt;&lt;p&gt;После 12-часовой работы бригада подключила компрессор.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;div class="news-item"&gt;&lt;img src="https://via.placeholder.com/400x200/0b1424/2a5f8a?text=Новость+2" alt=""&gt;&lt;div class="text"&gt;&lt;div class="date"&gt;24.08.2026&lt;/div&gt;&lt;h4&gt;Волонтёры доставили 5 тонн запчастей&lt;/h4&gt;&lt;p&gt;Колонна из 8 машин прибыла на завод утром.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;div class="news-item"&gt;&lt;img src="https://via.placeholder.com/400x200/0b1424/e85a2c?text=Новость+3" alt=""&gt;&lt;div class="text"&gt;&lt;div class="date"&gt;23.08.2026&lt;/div&gt;&lt;h4&gt;Открыт пункт психологической помощи&lt;/h4&gt;&lt;p&gt;Специалисты принимают семьи работников.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;p style="text-align:right"&gt;&lt;a href="#" data-page="news"&gt;Все новости →&lt;/a&gt;&lt;/p&gt;
+
+    &lt;h2&gt;Истории героев&lt;/h2&gt;
+    &lt;div class="grid-3"&gt;
+      &lt;div class="card"&gt;&lt;h3&gt;Алексей, сварщик&lt;/h3&gt;&lt;p&gt;«Я не ушёл с поста, даже когда было страшно. Мы работаем за себя и за страну».&lt;/p&gt;&lt;/div&gt;
+      &lt;div class="card"&gt;&lt;h3&gt;Мария, волонтёр-пенсионер&lt;/h3&gt;&lt;p&gt;«Приехала из Рязани, чтобы помочь. Своих не бросаем!»&lt;/p&gt;&lt;/div&gt;
+      &lt;div class="card"&gt;&lt;h3&gt;Дмитрий, врач&lt;/h3&gt;&lt;p&gt;«Организовал медпункт прямо на объекте. Здоровье рабочих — наша задача».&lt;/p&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;h2&gt;Как помочь прямо сейчас&lt;/h2&gt;
+    &lt;div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:space-around; margin:20px 0;"&gt;
+      &lt;a href="#" data-page="help" style="background:#fff; padding:16px 30px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.1);"&gt;💰 Деньги&lt;/a&gt;
+      &lt;a href="#" data-page="help" style="background:#fff; padding:16px 30px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.1);"&gt;📦 Материалы&lt;/a&gt;
+11:37
+&lt;a href="#" data-page="help" style="background:#fff; padding:16px 30px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.1);"&gt;🛠️  Руки&lt;/a&gt;
+      &lt;a href="#" data-page="help" style="background:#fff; padding:16px 30px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.1);"&gt;📢  Репост&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div style="background:#fff; padding:30px; border-radius:16px;"&gt;
+      &lt;h3&gt;Остались вопросы? Напишите нам&lt;/h3&gt;
+      &lt;div class="form-group"&gt;&lt;input type="text" placeholder="Ваше сообщение" /&gt;&lt;/div&gt;
+      &lt;button class="btn-primary"&gt;Отправить&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- ===== О ПРОЕКТЕ ===== --&gt;
+&lt;div id="about" class="page"&gt;
+  &lt;div class="container"&gt;
+    &lt;h1&gt;О нас&lt;/h1&gt;
+    &lt;p&gt;&lt;strong&gt;Мы — гражданский штаб, созданный в первые часы после теракта.&lt;/strong&gt; Наша цель — координировать помощь заводу и его работникам. Мы не чиновники и не политики. Мы — такие же, как вы. Нас объединила беда, и мы твёрдо решили: завод должен работать. Враг хотел посеять страх — а получил народное сопротивление. Мы докажем, что вместе мы сила.&lt;/p&gt;
+    &lt;h2&gt;Наша миссия&lt;/h2&gt;
+    &lt;div class="grid-3"&gt;
+      &lt;div class="card"&gt;&lt;h3&gt;Сплочение&lt;/h3&gt;&lt;p&gt;Объединяем граждан, бизнес и власть вокруг одной задачи.&lt;/p&gt;&lt;/div&gt;
+      &lt;div class="card"&gt;&lt;h3&gt;Восстановление&lt;/h3&gt;&lt;p&gt;Оперативно ремонтируем повреждённые агрегаты и инфраструктуру.&lt;/p&gt;&lt;/div&gt;
+      &lt;div class="card"&gt;&lt;h3&gt;Победа&lt;/h3&gt;&lt;p&gt;Срываем планы противника, возвращаем стране топливную независимость.&lt;/p&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;h2&gt;Команда&lt;/h2&gt;
+    &lt;div style="display:flex; flex-wrap:wrap; gap:20px;"&gt;
+      &lt;div style="background:#fff; padding:20px; border-radius:12px; min-width:150px;"&gt;&lt;strong&gt;Руководитель штаба&lt;/strong&gt;&lt;br&gt;опыт более 20 лет&lt;/div&gt;
+      &lt;div style="background:#fff; padding:20px; border-radius:12px; min-width:150px;"&gt;&lt;strong&gt;Главный инженер&lt;/strong&gt;&lt;br&gt;бывший замдиректора НПЗ&lt;/div&gt;
+      &lt;div style="background:#fff; padding:20px; border-radius:12px; min-width:150px;"&gt;&lt;strong&gt;Координатор волонтёров&lt;/strong&gt;&lt;br&gt;организатор акций&lt;/div&gt;
+      &lt;div style="background:#fff; padding:20px; border-radius:12px; min-width:150px;"&gt;&lt;strong&gt;Психолог&lt;/strong&gt;&lt;br&gt;работа с семьями&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;h2&gt;Открытость&lt;/h2&gt;
+    &lt;p&gt;Мы отчитываемся каждую неделю: все поступления и расходы — в открытом доступе. Честность — наша основа.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- ===== НОВОСТИ ===== --&gt;
+&lt;div id="news" class="page"&gt;
+  &lt;div class="container"&gt;
+    &lt;h1&gt;Новости восстановления&lt;/h1&gt;
+    &lt;div class="tabs"&gt;
+      &lt;button class="tab-btn active" data-tab="all"&gt;Все&lt;/button&gt;
+      &lt;button class="tab-btn" data-tab="repair"&gt;Ремонт&lt;/button&gt;
+      &lt;button class="tab-btn" data-tab="volunteers"&gt;Волонтёры&lt;/button&gt;
+      &lt;button class="tab-btn" data-tab="safety"&gt;Безопасность&lt;/button&gt;
+      &lt;button class="tab-btn" data-tab="official"&gt;Официально&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="news-grid" id="newsGrid"&gt;
+      &lt;!-- заполняется JS --&gt;
+    &lt;/div&gt;
+    &lt;div style="margin-top:30px;"&gt;
+      &lt;h2&gt;Видео дня&lt;/h2&gt;
+      &lt;div style="background:#0b1424; color:#fff; padding:40px; border-radius:16px; text-align:center;"&gt;📹 Встраивание видео (YouTube)&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div style="margin-top:30px;"&gt;
+      &lt;h2&gt;Фото дня&lt;/h2&gt;
+      &lt;img src="https://via.placeholder.com/1200x400/0b1424/e85a2c?text=Фото+дня:+установка+трансформатора" style="width:100%; border-radius:16px;" alt="Фото дня" /&gt;
+      &lt;p style="text-align:center; margin-top:8px;"&gt;Установка нового трансформатора. 26 августа 2026&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- ===== КАК ПОМОЧЬ ===== --&gt;
+&lt;div id="help" class="page"&gt;
+  &lt;div class="container"&gt;
+    &lt;h1&gt;Помочь заводу — помочь стране&lt;/h1&gt;
+    &lt;div class="tabs" id="helpTabs"&gt;
+      &lt;button class="tab-btn active" data-tab="finance"&gt;Финансовая&lt;/button&gt;
+      &lt;button class="tab-btn" data-tab="materials"&gt;Материалы&lt;/button&gt;
+      &lt;button class="tab-btn" data-tab="volunteer"&gt;Волонтёрство&lt;/button&gt;
+      &lt;button class="tab-btn" data-tab="info"&gt;Информационная&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Финансовая --&gt;
+11:37
+&lt;div class="tab-content active" id="finance"&gt;
+      &lt;p&gt;Даже небольшая сумма — это вклад в общее дело. Средства идут на закупку запчастей, топлива, питания для волонтёров и компенсации работникам. Переведите быстро и безопасно.&lt;/p&gt;
+      &lt;div class="form-group"&gt;&lt;label&gt;Сумма (₽)&lt;/label&gt;&lt;input type="number" value="1000" /&gt;&lt;/div&gt;
+      &lt;div style="display:flex; gap:10px; flex-wrap:wrap;"&gt;&lt;button class="tab-btn" style="background:#e0e6f0;"&gt;500&lt;/button&gt;&lt;button class="tab-btn" style="background:#e0e6f0;"&gt;1000&lt;/button&gt;&lt;button class="tab-btn" style="background:#e0e6f0;"&gt;5000&lt;/button&gt;&lt;button class="tab-btn" style="background:#e0e6f0;"&gt;10000&lt;/button&gt;&lt;/div&gt;
+      &lt;div class="form-group"&gt;&lt;label&gt;Назначение&lt;/label&gt;&lt;select&gt;&lt;option&gt;Общий фонд&lt;/option&gt;&lt;option&gt;Конкретный агрегат&lt;/option&gt;&lt;option&gt;Помощь семьям&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;
+      &lt;div style="display:flex; gap:20px; flex-wrap:wrap; margin:16px 0;"&gt;💳 Visa  💳 Mir  📱  СБП  📱  QR-код&lt;/div&gt;
+      &lt;div class="form-group"&gt;&lt;input type="checkbox" id="anon" /&gt; &lt;label for="anon"&gt;Я согласен на публикацию в отчёте (можно анонимно)&lt;/label&gt;&lt;/div&gt;
+      &lt;button class="btn-primary"&gt;Перевести&lt;/button&gt;
+      &lt;h3&gt;Последние пожертвования&lt;/h3&gt;
+      &lt;table style="width:100%; border-collapse:collapse; background:#fff; border-radius:12px; overflow:hidden;"&gt;
+        &lt;tr style="background:#0b1424; color:#fff;"&gt;&lt;th&gt;Имя&lt;/th&gt;&lt;th&gt;Сумма&lt;/th&gt;&lt;th&gt;Дата&lt;/th&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Анна К.&lt;/td&gt;&lt;td&gt;5 000 ₽&lt;/td&gt;&lt;td&gt;26.08.2026&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;ООО «ТрансСервис»&lt;/td&gt;&lt;td&gt;50 000 ₽&lt;/td&gt;&lt;td&gt;26.08.2026&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Владимир П.&lt;/td&gt;&lt;td&gt;1 000 ₽&lt;/td&gt;&lt;td&gt;25.08.2026&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Материалы --&gt;
+    &lt;div class="tab-content" id="materials"&gt;
+      &lt;p&gt;Заводу срочно нужны: насосы, трубы, кабель, масло, спецодежда. Посмотрите список и выберите, что можете передать.&lt;/p&gt;
+      &lt;div style="background:#fff; padding:20px; border-radius:12px;"&gt;
+        &lt;div&gt;&lt;input type="checkbox" /&gt; Насосы (до 10 шт.)&lt;/div&gt;
+        &lt;div&gt;&lt;input type="checkbox" /&gt; Трубы (100 м)&lt;/div&gt;
+        &lt;div&gt;&lt;input type="checkbox" /&gt; Кабель (500 м)&lt;/div&gt;
+        &lt;div&gt;&lt;input type="checkbox" /&gt; Трансформаторное масло&lt;/div&gt;
+        &lt;div&gt;&lt;input type="checkbox" /&gt; Спецодежда (50 комплектов)&lt;/div&gt;
+        &lt;button class="btn-secondary" style="margin-top:16px;"&gt;Предложить выбранное&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top:20px;"&gt;📍  Карта пунктов приёма (Яндекс.Карты)&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Волонтёрство --&gt;
+    &lt;div class="tab-content" id="volunteer"&gt;
+      &lt;p&gt;Нужны руки — ваши руки. Заполните анкету, и мы свяжемся с вами в течение часа.&lt;/p&gt;
+      &lt;div class="form-group"&gt;&lt;label&gt;ФИО&lt;/label&gt;&lt;input type="text" /&gt;&lt;/div&gt;
+      &lt;div class="form-group"&gt;&lt;label&gt;Возраст&lt;/label&gt;&lt;input type="number" /&gt;&lt;/div&gt;
+      &lt;div class="form-group"&gt;&lt;label&gt;Город&lt;/label&gt;&lt;input type="text" /&gt;&lt;/div&gt;
+      &lt;div class="form-group"&gt;&lt;label&gt;Контактный телефон&lt;/label&gt;&lt;input type="tel" /&gt;&lt;/div&gt;
+      &lt;div class="form-group"&gt;&lt;label&gt;Навыки&lt;/label&gt;&lt;select&gt;&lt;option&gt;Сварщик&lt;/option&gt;&lt;option&gt;Водитель&lt;/option&gt;&lt;option&gt;Разнорабочий&lt;/option&gt;&lt;option&gt;Медик&lt;/option&gt;&lt;option&gt;Повар&lt;/option&gt;&lt;option&gt;Психолог&lt;/option&gt;&lt;option&gt;Связист&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;
+      &lt;div class="form-group"&gt;&lt;label&gt;Готовность к выезду&lt;/label&gt;&lt;input type="checkbox" /&gt; Да&lt;/div&gt;
+      &lt;div class="form-group"&gt;&lt;label&gt;Доступное время&lt;/label&gt;&lt;input type="text" placeholder="например, вечер после 18:00" /&gt;&lt;/div&gt;
+      &lt;button class="btn-primary"&gt;Записаться&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Информационная --&gt;
+    &lt;div class="tab-content" id="info"&gt;
+      &lt;p&gt;Распространяйте правду. Скачивайте готовые посты и публикуйте в соцсетях. Каждый репост — это удар по дезинформации врага.&lt;/p&gt;
+      &lt;button class="btn-secondary"&gt;📥 Скачать пак картинок и текстов&lt;/button&gt;
+      &lt;div style="margin:20px 0;"&gt;Хештеги: &lt;strong&gt;#НПЗ #Вместе #СвоихНеБросаем&lt;/strong&gt;&lt;/div&gt;
+      &lt;h3&gt;Сообщить о фейке&lt;/h3&gt;
+      &lt;div class="form-group"&gt;&lt;textarea placeholder="Вставьте ссылку или описание"&gt;&lt;/textarea&gt;&lt;/div&gt;
+11:37
+&lt;button class="btn-primary"&gt;Отправить&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- ===== ПОДДЕРЖКА ===== --&gt;
+&lt;div id="support" class="page"&gt;
+  &lt;div class="container"&gt;
+    &lt;h1&gt;Помощь работникам и их семьям&lt;/h1&gt;
+    &lt;div style="background:#fff; padding:24px; border-radius:16px; margin-bottom:20px;"&gt;
+      &lt;h2&gt;Для работников завода&lt;/h2&gt;
+      &lt;p&gt;Если вы потеряли имущество, здоровье или нуждаетесь в жилье — оформите заявку, и мы поможем. Также действует горячая линия и пункты временного размещения.&lt;/p&gt;
+      &lt;button class="btn-primary"&gt;Подать заявку на помощь&lt;/button&gt;
+      &lt;div style="margin-top:16px;"&gt;📞  Горячая линия: 8-800-XXX-XX-XX · МЧС · Администрация&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div style="background:#fff; padding:24px; border-radius:16px; margin-bottom:20px;"&gt;
+      &lt;h2&gt;Для семей&lt;/h2&gt;
+      &lt;p&gt;Жёны, дети, пожилые родители — вы не одни. Психологи и юристы работают ежедневно. Бесплатные консультации и гуманитарная помощь.&lt;/p&gt;
+      &lt;button class="btn-secondary"&gt;Записаться к психологу&lt;/button&gt;
+      &lt;div style="margin-top:16px;"&gt;📍  Пункты выдачи детских вещей, продуктов&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div style="background:#fff; padding:24px; border-radius:16px;"&gt;
+      &lt;h2&gt;Памятки по безопасности&lt;/h2&gt;
+      &lt;p&gt;Знание спасает жизнь. Ознакомьтесь с инструкциями и скачайте их на телефон.&lt;/p&gt;
+      &lt;ul style="list-style:none; padding:0;"&gt;
+        &lt;li&gt;🔹  При воздушной тревоге&lt;/li&gt;
+        &lt;li&gt;🔹  Осколочные ранения — первая помощь&lt;/li&gt;
+        &lt;li&gt;🔹  Безопасность окон&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;button class="btn-secondary"&gt;Скачать все памятки (PDF)&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- ===== ВОССТАНОВЛЕНИЕ ===== --&gt;
+&lt;div id="recovery" class="page"&gt;
+  &lt;div class="container"&gt;
+    &lt;h1&gt;Как идёт восстановление — отчёт в реальном времени&lt;/h1&gt;
+    &lt;div class="timeline"&gt;
+      &lt;div class="timeline-item"&gt;&lt;div class="date"&gt;20.06.2026&lt;/div&gt;&lt;p&gt;Расчистка завалов завершена.&lt;/p&gt;&lt;/div&gt;
+      &lt;div class="timeline-item"&gt;&lt;div class="date"&gt;01.07.2026&lt;/div&gt;&lt;p&gt;Подано электропитание на первую очередь.&lt;/p&gt;&lt;/div&gt;
+      &lt;div class="timeline-item"&gt;&lt;div class="date"&gt;15.07.2026&lt;/div&gt;&lt;p&gt;Запущен компрессорный цех.&lt;/p&gt;&lt;/div&gt;
+      &lt;div class="timeline-item"&gt;&lt;div class="date"&gt;10.08.2026&lt;/div&gt;&lt;p&gt;Начало поставок топлива в регион.&lt;/p&gt;&lt;/div&gt;
+      &lt;div class="timeline-item"&gt;&lt;div class="date"&gt;25.08.2026&lt;/div&gt;&lt;p&gt;Восстановление второго агрегата.&lt;/p&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;h2&gt;Схема завода&lt;/h2&gt;
+    &lt;div style="background:#0b1424; color:#fff; padding:40px; border-radius:16px; text-align:center; margin:20px 0;"&gt;
+      🗺️  Интерактивная схема: зоны (красный — повреждён, жёлтый — частично, зелёный — работает)
+    &lt;/div&gt;
+    &lt;h2&gt;Прогнозный график&lt;/h2&gt;
+    &lt;div style="display:flex; gap:20px; justify-content:space-around; background:#fff; padding:24px; border-radius:16px;"&gt;
+      &lt;div&gt;&lt;strong&gt;1 этап (неделя)&lt;/strong&gt;&lt;br&gt;⚡ электроснабжение&lt;br&gt; &lt;span style="color:#e85a2c;"&gt;100%&lt;/span&gt;&lt;/div&gt;
+      &lt;div&gt;&lt;strong&gt;2 этап (месяц)&lt;/strong&gt;&lt;br&gt;🔧  50% мощностей&lt;br&gt; &lt;span style="color:#e85a2c;"&gt;63%&lt;/span&gt;&lt;/div&gt;
+      &lt;div&gt;&lt;strong&gt;3 этап (квартал)&lt;/strong&gt;&lt;br&gt;🏭 полная мощность&lt;br&gt; &lt;span style="color:#e85a2c;"&gt;30%&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- ===== БИБЛИОТЕКА / FAQ ===== --&gt;
+&lt;div id="faq" class="page"&gt;
+  &lt;div class="container"&gt;
+    &lt;h1&gt;Ответы на вопросы и полезные материалы&lt;/h1&gt;
+    &lt;div class="faq-item open"&gt;
+      &lt;div class="faq-question"&gt;Как убедиться, что деньги пойдут именно на завод?&lt;/div&gt;
+      &lt;div class="faq-answer"&gt;Мы публикуем все платёжные поручения и акты выполненных работ. Подробные отчёты — в разделе «Отчётность».&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="faq-item"&gt;
+      &lt;div class="faq-question"&gt;Может ли волонтёр приехать из другого города?&lt;/div&gt;
+      &lt;div class="faq-answer"&gt;Да, для иногородних предоставляется проживание в общежитии и питание. Записывайтесь в анкете.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="faq-item"&gt;
+      &lt;div class="faq-question"&gt;Что нужно для работы на объекте?&lt;/div&gt;
+11:37
+&lt;div class="faq-answer"&gt;Достаточно желания и отсутствия медицинских противопоказаний. Специалисты проведут инструктаж на месте.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="faq-item"&gt;
+      &lt;div class="faq-question"&gt;Как передать запчасти, если я далеко?&lt;/div&gt;
+      &lt;div class="faq-answer"&gt;Отправьте через любую транспортную компанию до нашего склада, реквизиты указаны в разделе «Контакты».&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;h2&gt;Скачать файлы&lt;/h2&gt;
+    &lt;ul style="background:#fff; padding:20px; border-radius:12px; list-style:none;"&gt;
+      &lt;li&gt;📄  Памятка волонтёра (PDF) — &lt;a href="#"&gt;Скачать&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;📄  Договор пожертвования (DOC) — &lt;a href="#"&gt;Скачать&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;📄  Заявление на компенсацию (PDF) — &lt;a href="#"&gt;Скачать&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;📄  Инструкция по ТБ (PDF) — &lt;a href="#"&gt;Скачать&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h2&gt;Полезные ссылки&lt;/h2&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Минэнерго РФ&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;МЧС России&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Администрация региона&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- ===== КОНТАКТЫ ===== --&gt;
+&lt;div id="contacts" class="page"&gt;
+  &lt;div class="container"&gt;
+    &lt;h1&gt;Свяжитесь с нами&lt;/h1&gt;
+    &lt;div class="contacts-row"&gt;
+      &lt;div class="info"&gt;
+        &lt;p&gt;&lt;strong&gt;Горячая линия:&lt;/strong&gt; 8-800-XXX-XX-XX (круглосуточно)&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;E-mail:&lt;/strong&gt; help@npz-spasenie.ru&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;Telegram:&lt;/strong&gt; @npz_help&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;ВКонтакте:&lt;/strong&gt; vk.com/npz_spasenie&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;Адрес штаба:&lt;/strong&gt; г. Москва, ул. Примерная, д. 1&lt;/p&gt;
+        &lt;div style="margin-top:10px;"&gt;📍  Карта проезда&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="form"&gt;
+        &lt;div class="form-group"&gt;&lt;label&gt;Имя&lt;/label&gt;&lt;input type="text" /&gt;&lt;/div&gt;
+        &lt;div class="form-group"&gt;&lt;label&gt;E-mail или телефон&lt;/label&gt;&lt;input type="text" /&gt;&lt;/div&gt;
+        &lt;div class="form-group"&gt;&lt;label&gt;Тема&lt;/label&gt;&lt;input type="text" /&gt;&lt;/div&gt;
+        &lt;div class="form-group"&gt;&lt;label&gt;Сообщение&lt;/label&gt;&lt;textarea&gt;&lt;/textarea&gt;&lt;/div&gt;
+        &lt;button class="btn-primary"&gt;Отправить&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- ===== ФУТЕР ===== --&gt;
+&lt;footer class="footer"&gt;
+  &lt;div class="container"&gt;
+    &lt;div&gt;
+      &lt;div style="color:#fff; font-size:20px;"&gt;#ВместеВосстановим&lt;/div&gt;
+      &lt;p style="margin-top:10px;"&gt;© 2026 Гражданский штаб помощи&lt;/p&gt;
+      &lt;p&gt;Все средства направляются адресно.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;h4 style="color:#fff;"&gt;Меню&lt;/h4&gt;
+      &lt;a href="#" data-page="home"&gt;Главная&lt;/a&gt;&lt;br /&gt;
+      &lt;a href="#" data-page="about"&gt;О проекте&lt;/a&gt;&lt;br /&gt;
+      &lt;a href="#" data-page="help"&gt;Как помочь&lt;/a&gt;&lt;br /&gt;
+      &lt;a href="#" data-page="contacts"&gt;Контакты&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;h4 style="color:#fff;"&gt;Мы в соцсетях&lt;/h4&gt;
+      &lt;div class="socials"&gt;
+        &lt;a href="#"&gt;📱  Telegram&lt;/a&gt;
+        &lt;a href="#"&gt;📘  ВК&lt;/a&gt;
+        &lt;a href="#"&gt;📸  ОК&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+
+&lt;!-- ===== JAVASCRIPT ===== --&gt;
+&lt;script&gt;
+  (function() {
+    // ----- Навигация -----
+    const pages = document.querySelectorAll('.page');
+    const navLinks = document.querySelectorAll('.nav a[data-page]');
+    const burger = document.getElementById('burger');
+    const nav = document.getElementById('nav');
+
+    function showPage(pageId) {
+      pages.forEach(p =&gt; p.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+      navLinks.forEach(a =&gt; a.classList.remove('active'));
+      document.querySelector(`.nav a[data-page="${pageId}"]`)?.classList.add('active');
+      // Закрыть меню на мобильных
+      nav.classList.remove('open');
+      // скролл наверх
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    navLinks.forEach(link =&gt; {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const page = this.dataset.page;
+        showPage(page);
+        // если это кнопка "Помочь" - переключаем на help
+        if (this.classList.contains('btn-donate')) {
+          showPage('help');
+        }
+      });
+    });
+
+    burger.addEventListener('click', function() {
+11:37
+nav.classList.toggle('open');
+    });
+
+    // ----- Вкладки внутри "Как помочь" -----
+    const helpTabs = document.querySelectorAll('#helpTabs .tab-btn');
+    const helpContents = document.querySelectorAll('#help .tab-content');
+
+    helpTabs.forEach(btn =&gt; {
+      btn.addEventListener('click', function() {
+        helpTabs.forEach(b =&gt; b.classList.remove('active'));
+        this.classList.add('active');
+        const tab = this.dataset.tab;
+        helpContents.forEach(c =&gt; c.classList.remove('active'));
+        document.getElementById(tab).classList.add('active');
+      });
+    });
+
+    // ----- Вкладки в новостях (демо) -----
+    const newsTabs = document.querySelectorAll('#news .tabs .tab-btn');
+    const newsGrid = document.getElementById('newsGrid');
+    // просто для примера при клике меняем заглушки
+    newsTabs.forEach(btn =&gt; {
+      btn.addEventListener('click', function() {
+        newsTabs.forEach(b =&gt; b.classList.remove('active'));
+        this.classList.add('active');
+        const tab = this.dataset.tab;
+        const fakeText = tab === 'all' ? 'Все новости' : tab === 'repair' ? 'Ремонт' : tab === 'volunteers' ? 'Волонтёры' : tab === 'safety' ? 'Безопасность' : 'Официально';
+        newsGrid.innerHTML = `&lt;div class="news-item"&gt;&lt;img src="https://via.placeholder.com/400x200/0b1424/e85a2c?text=${fakeText}" alt=""&gt;&lt;div class="text"&gt;&lt;div class="date"&gt;26.08.2026&lt;/div&gt;&lt;h4&gt;Новости по теме «${fakeText}»&lt;/h4&gt;&lt;p&gt;Здесь будут статьи.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;`;
+      });
+    });
+    // Инициализация новостей
+    document.querySelector('#news .tabs .tab-btn.active')?.click();
+
+    // ----- FAQ аккордеон -----
+    document.querySelectorAll('.faq-question').forEach(q =&gt; {
+      q.addEventListener('click', function() {
+        const item = this.parentElement;
+        item.classList.toggle('open');
+      });
+    });
+
+    // ----- Анимация счётчиков (скролл) -----
+    function animateCounters() {
+      const counters = document.querySelectorAll('.stat-card .number');
+      const windowHeight = window.innerHeight;
+      counters.forEach(counter =&gt; {
+        const rect = counter.getBoundingClientRect();
+        if (rect.top &lt; windowHeight - 50 &amp;&amp; !counter.dataset.animated) {
+          counter.dataset.animated = 'true';
+          const target = parseInt(counter.dataset.count, 10);
+          let current = 0;
+          const step = Math.max(1, Math.floor(target / 60));
+          const interval = setInterval(() =&gt; {
+            current += step;
+            if (current &gt;= target) {
+              current = target;
+              clearInterval(interval);
+            }
+            // Форматирование для больших чисел
+            if (target &gt; 1000000) {
+              counter.textContent = current.toLocaleString('ru-RU');
+            } else {
+              counter.textContent = current;
+            }
+          }, 20);
+        }
+      });
+    }
+
+    // Обновление бегущей строки (заглушка)
+    function updateTicker() {
+      const sum = document.getElementById('sum');
+      const vol = document.getElementById('vol');
+      const pct = document.getElementById('pct');
+      const days = document.getElementById('days');
+      // случайные изменения для демонстрации
+      setInterval(() =&gt; {
+        const baseSum = 47800000;
+        const add = Math.floor(Math.random() * 100000);
+        sum.textContent = (baseSum + add).toLocaleString('ru-RU');
+        vol.textContent = 1250 + Math.floor(Math.random() * 20);
+        pct.textContent = 63 + Math.floor(Math.random() * 5);
+        days.textContent = 42 + Math.floor(Math.random() * 3);
+      }, 8000);
+    }
+
+    window.addEventListener('load', function() {
+      animateCounters();
+      updateTicker();
+    });
+    window.addEventListener('scroll', animateCounters);
+    window.addEventListener('resize', animateCounters);
+
+    // Переключение на главную по умолчанию (уже активна)
+  })();
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+```
+</div></div></div></div></div></div></div></div></div></div><div class="ds-notification-container ds-theme ds-notification-container--top-right"></div><div class="ds-notification-container ds-theme"></div><div id="cf-overlay" style="position: fixed; inset: 0px; background-color: rgba(0, 0, 0, 0.7); border: 1px solid grey; z-index: 10000; display: none;"><p style="color: white; text-align: center; margin-top: 50vh;">One more step before you proceed...</p><div style="display: flex; flex-wrap: nowrap; align-items: center; justify-content: center;" id="cf-turnstile"></div></div><script src="./DeepSeek - В неизвестность_files/api(1).js" defer=""></script><div aria-hidden="true" style="background-color: rgb(255, 255, 255); border: 1px solid rgb(215, 215, 215); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px; border-radius: 4px; left: auto; top: -10000px; z-index: -2147483648; position: absolute; pointer-events: auto; transition: opacity 0.15s ease-out; opacity: 0; visibility: hidden;"><div style="position: relative; z-index: 1;"><iframe src="./DeepSeek - В неизвестность_files/hcaptcha.html" frameborder="0" scrolling="no" allow="private-state-token-redemption" title="hCaptcha challenge" style="border: 0px; z-index: 2000000000; position: relative;"></iframe></div><div style="width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div style="border-width: 11px; border-style: none; position: absolute; pointer-events: none; margin-top: -11px; z-index: 1; right: 100%;"><div style="border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;"></div><div style="border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;"></div></div></div><div class="ds-toast-container ds-toast-container--top ds-theme"></div><div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(215, 215, 215); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px; border-radius: 4px; left: auto; top: -10000px; z-index: -2147483648; position: absolute; pointer-events: auto; transition: opacity 0.15s ease-out; opacity: 0; visibility: hidden; display: block;" aria-hidden="true"><div style="position: relative; z-index: 1; width: 400px; height: 600px;"><iframe src="./DeepSeek - В неизвестность_files/hcaptcha(1).html" frameborder="0" scrolling="no" allow="private-state-token-redemption" title="проверка hCaptcha" style="border: 0px; z-index: 2000000000; position: relative; width: 400px; height: 600px;"></iframe></div><div style="width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05; cursor: default;"></div><div style="border-width: 11px; border-style: none; position: absolute; pointer-events: none; margin-top: -11px; z-index: 1; right: 100%; top: 10px;"><div style="border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1; display: none;"></div><div style="border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0; display: none;"></div></div></div><div class="ds-floating-container" style="z-index: 0;"><div class="ds-floating-position-wrapper ds-theme" style="z-index: 0; left: 39.356px; top: 376.5px;" data-transform-origin="bottom"></div></div><div class="fffe1848" aria-hidden="false"></div><div class="ds-floating-container" style="z-index: 0;"><div class="ds-floating-position-wrapper ds-theme" style="z-index: 0; left: 470.506px; top: 358.5px;" data-transform-origin="bottom"></div></div><div class="ds-floating-container" style="z-index: 0;"><div class="ds-floating-position-wrapper ds-theme" style="z-index: 0; left: 165.044px; top: 376.5px;" data-transform-origin="bottom"></div></div></body></html>
